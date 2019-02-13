@@ -1,25 +1,182 @@
 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <link rel="stylesheet" href="./normalize.css">
+<link rel="stylesheet" href="./assets/social-icons.css">
 
 <link rel="stylesheet" href="./style.css">
-<script src="./script.js" ></script>
-<div class="overlay-menu-wrapper">
-    <div id="overlay-menu"></div>
-</div>
+<script src="./script.js"></script>
+<script src="./smoothscroll.js"></script>
 
+<!-- <img src="assets/example_overlay.png" style="margin-top: -179px; width: 100%; position:fixed; opacity: 0.5;"></div> -->
 <div class="topbar">
-    <a href="#" id="topbar-hb-menu" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-    <img class="topbar-logo" src="./logo.svg" alt="flock. logo">
-    <nav id="topbar-main-nav">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-    </nav>
-    <nav id="topbar-social-nav">
-        <a href=""><i class="fa fa-facebook"></i></a>
-        <a href=""><i class="fa fa-linkedin"></i></a>
-    </nav>
+  <img class="topbar-logo" src="./assets/images/logo.svg" alt="flock. logo">
+  <a href="#aboutus" id="topbar-hb-menu">
+    <!-- <i class="icon icon-bars"></i> -->
+    <!-- <img src="./assets/images/hb.svg" alt=""> -->
+  </a>
 </div>
+<div>
+  <!-- <div class="overlay-menu-wrapper">
+      <div id="overlay-menu">
+          <div id="menu">
+              <nav id="main-nav">
+                  <a href="#About us" class="active">About us</a>
+                  <a href="#News">Our stories</a>
+                  <a href="#Contact">Join us</a>
+                  <a href="#About">Contacts</a>
+              </nav>
+              <nav id="topbar-social-nav">
+                  <a href="">
+                      <span class="icon-stack icon-lg">
+                          <i class="icon icon-circle-thin icon-stack-2x"></i>
+                          <i class="icon icon-facebook icon-stack-1x"></i>
+                      </span>
+                  </a>
+                  <a href="">
+                      <span class="icon-stack icon-lg">
+                          <i class="icon icon-circle-thin icon-stack-2x"></i>
+                          <i class="icon icon-linkedin icon-stack-1x"></i>
+                      </span>
+                  </a>
+              </nav>
+          </div>
+      </div>
+  </div> -->
+  <!-- homepage
+    homepage-container
+      grid-container
+        breadcrumb
+    homepage-content
+      homepage-header -->
+  <section id="homepage">
+    <div class="homepage-container">
+        <div class="grid-container">
+            <p class="breadcrumb">Software Engineering community</p>
+        </div>
+      <div class="homepage-text-container">
+        <h2 class="homepage-text-title">DE WERELD
+          <span class="color-yellow">
+                <i>SAMEN</i>
+            </span> INSPIREREN</h2>
+      </div>
+    </div>
+    <img src="./assets/images/home_bg.jpg"/>
+
+    <button href="#" class="call-to-action-button"></button>
+  </section>
+
+
+
+
+  <section id="aboutus" class="grid-container content-padding">
+    <p class="breadcrumb">Over ons</p>
+    <div class="row flex-align-center flex-justify-centered">
+      <div class="col-2 about-us-header">
+        <div>Wij zijn een community van software engineers</div>
+      </div>
+      <div class="col-2 about-us-body">
+        <div>
+            <p>Flock. is een community waar software engineers vol passie samenwerken. We delen kennis, inspireren elkaar
+            en maken samen mooie software.</p>
+            <p>Het allerbelangrijkste is dat jij kan doen wat je leuk vindt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="ourstories" class="grid-container content-padding">
+    <p class="breadcrumb">Ons verhaal</p>
+    <div class="row flex-justify-centered flex-align-center">
+      <div class="col-2">
+        <div class="ourstories-text-wrapper">
+          <h3>Google assistent</h3>
+          <div class="ourstories-paragraphs">
+            <p>Flock heeft ervaring met google assistant applicaties ontwikkelen (zie: vorige blog post)</p>
+            <p>We observeren een test "gat" bij ontwikkelen van deze applicaties. Ze moeten manueel getest worden om te
+              garanderen dat alle "conversation flows" door het systeem blijven werken. Naar aanleiding daarvan heeft
+              Flock een test framework ontwikkelt om deze flows geautomatiseerd te testen.</p>
+            <p>Cucumber is de aangewezen tooling voor dit probleem: het kan scenario's in natuurlijke taal vertalen naar
+              stappen die tegen de applicatie getest kunnen worden. Elke stap representeert een input (Als ik zeg "...")
+              of een output (Dan zegt de assistent "..."). Hierdoor zijn de "conversation flows" opgeschreven als een
+              "executable specification"; het geeft weer wat de applicatie allemaal kan dmv voobeeld conversaties en
+              test gelijkertijd dat die conversaties mogelijk zijn.</p>
+            <p>Dit test framework is uitgerold bij Bol.com op black friday 2018. Er wordt verder aan door ontwikkeld om
+              ook alle flows op de telefoon te kunnen testen. Hier kan de assistent naast tekst ook reageren met visuele
+              middelen.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-2 text-align-center">
+        <img class="ourstories-image" src="./assets/images/side-view.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <section id="joinus" class="grid-container content-padding">
+    <p class="breadcrumb">Doe mee</p>
+    <div class="row flex-align-start joinus-card-container">
+      <div class="col-3 flex-justify-centered">
+        <div class="joinus-card">
+          <div class="badges">
+            <img src="./assets/images/ICON_Flock_Days_Motion.gif" alt="Flock days">
+          </div>
+          <p class="mt-s">
+            Iedere twee weken op een dag samenwerken met de community van software engineers.
+          </p>
+        </div>
+      </div>
+      <div class="col-3 flex-justify-centered">
+        <div class="joinus-card">
+          <div class="badges">
+
+            <img src="./assets/images/ICON_Drinks_Motion.gif" alt="Drinks">
+          </div>
+
+          <p class="mt-s">Onze Flock. community borrels zijn op: 10 januari, 18 april, 20 juni, 10 Oktober.
+          </p>
+        </div>
+      </div>
+      <div class="col-3 flex-justify-centered">
+        <div class="joinus-card">
+          <div class="badges">
+
+            <img src="./assets/images/ICON_MeetUp_Motion.gif" alt="Meet up">
+          </div>
+
+          <p class="mt-s">
+            Flock organiseert samen met haar partners ING, bol.com en Schiphol meetups.
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <section id="contact">
+      <div class="grid-container margin-bottom">
+            <p class="breadcrumb">Contact</p>
+
+            <div id="contact-container">
+              <div class="contacts-text-container">
+                <h2>Samen sparren? Flock engineer worden?</h2>
+                <p class="contacts-sub-title">
+                  Je bent altijd welkom op ons kantoor voor een kop koffie.
+                </p>
+                <p>
+                  <strong>Flock.</strong> Software Engineers
+                  <br>
+                  <strong>T</strong> +31(0)6 10 03 99 82</p>
+                <a href="#" class="contact-links">
+                        <span class="icon-stack icon-lg">
+                            <i class="icon icon-circle-thin icon-stack-2x"></i>
+                            <i class="icon icon-facebook icon-stack-1x"></i>
+                        </span>
+                </a>
+                <a href="https://www.linkedin.com/company/flock." class="contact-links">
+                        <span class="icon-stack icon-lg">
+                            <i class="icon icon-circle-thin icon-stack-2x"></i>
+                            <i class="icon icon-linkedin icon-stack-1x"></i>
+                        </span>
+                </a>
+              </div>
+           </div>
+      </div>
+    
+   <img src="./assets/images/top down.jpg" alt="" class="footer-image"/>   
+  </section>
