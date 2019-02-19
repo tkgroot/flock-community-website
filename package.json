@@ -1,0 +1,17 @@
+{
+  "name": "flock-community-website",
+  "version": "1.0.0",
+  "description": "The https://www.flock-se.com website",
+  "main": "./src/index.html",
+  "author": "Willem Kersten",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-copy": "^4.0.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-uglify": "^3.0.1"
+  }
+}
