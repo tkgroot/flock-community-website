@@ -7,10 +7,9 @@ var ourStoriesConsts = {
 }
 
 document.addEventListener('click', function(e){
-    if(e.target.classList.contains(ourStoriesConsts.header)){
+    if(e.target.classList.contains(ourStoriesConsts.header)) {
         var matchingAccordionElement = getItemFromCollectionByClassName(e.target.parentElement.parentElement.children, ourStoriesConsts.content);
         toggleAccordionItem(matchingAccordionElement);
-        
     }
   })
 
@@ -31,9 +30,7 @@ function toggleAccordionItem(elem) {
         }
         elem.className+= " -active";
         elem.style.maxHeight = elem.querySelector(ourStoriesConsts.contentInnerCls).scrollHeight + "px";
-    } else {
-        
-    }
+    } 
 }
 
 toggleAccordionItem(document.querySelector(ourStoriesConsts.contentCls));
