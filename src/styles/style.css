@@ -129,8 +129,11 @@ h3 {
 }
 
 .about-us__content {
-    padding-left: 40px;
     justify-content: center;
+}
+
+.our-stories__accordion {
+    padding-inline-start: 0;
 }
 
 .about-us__header {
@@ -167,7 +170,6 @@ h3 {
 
 .our-stories__accordion--content--inner {
     float: left;
-    margin-right: 10%;  
 }
 
 .our-stories__accordion--content--illustration img {
@@ -336,6 +338,9 @@ h3 {
         font-size: 36px;
         max-width: 355px;
     }
+    .about-us__content {
+        padding-left: 40px;
+    }
  }
 
  @media (max-width: 768px) {
@@ -346,14 +351,11 @@ h3 {
     .grid__col-3, .grid__col-2 {
         margin-bottom: 40px;
     }
+
 }
 
 
 @media (min-width: 768px) {
-    .about-us__content {
-        padding-left: 0;
-    }
-
     .grid__container{
         width:750px;
         padding-left: 40px!important;
@@ -389,6 +391,10 @@ h3 {
         text-align: right;
     }
 
+    .our-stories__accordion {
+        padding-inline-start: 40px!important;
+    }
+
     #homepage {
         padding-top:0px!important;
     }
@@ -403,6 +409,10 @@ h3 {
     
     #contact img {
         margin: 0 10vw;
+    }
+
+    .our-stories__accordion--content--inner {
+        margin-right: 10%;  
     }
 }
 

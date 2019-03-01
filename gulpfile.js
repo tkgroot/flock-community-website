@@ -35,10 +35,15 @@ gulp.task('assets', function() {
     .pipe(gulp.dest('./dist/assets'));
 });
 
+gulp.task('copy-root', function() {
+  return gulp.src(['./src/*.*', '!./src/index.html'])
+    .pipe(gulp.dest('./dist/'));
+});
+
 gulp.task('clean', function() {
   return del(['dist'])
 });
 
 gulp.task('default',
   gulp.series('clean',
-    gulp.parallel('html', 'js', 'css', 'assets')));
+    gulp.parallel('html', 'js', 'css', 'assets', 'copy-root')));
