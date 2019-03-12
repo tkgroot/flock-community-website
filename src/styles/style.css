@@ -67,23 +67,6 @@ h3 {
     z-index: 1;
 }
 
-.test {
-    position: relative;
-    overflow:hidden;
-}
-.homepage__diagonal {
-    content: ' ';
-    position: absolute;
-    z-index: 2;
-    width:110%;
-    height: calc(35vw + 130px);
-    top:-50%;
-    left: -8%;
-    transform:rotate(-10deg);
-    background-color: #ffffff;    
-    margin-top: 100px;
-}
-
 .homepage__container {
     position: absolute;
     z-index: 3;
@@ -107,7 +90,25 @@ h3 {
     width:100vw;
 }
 
-#homepage img {
+.homepage__background--container {
+    position: relative;
+    overflow:hidden;
+}
+
+.homepage__background--diagonal {
+    content: ' ';
+    position: absolute;
+    z-index: 2;
+    width:110%;
+    height: calc(35vw + 130px);
+    top:-50%;
+    left: -8%;
+    transform:rotate(-10deg);
+    background-color: #ffffff;    
+    margin-top: 100px;
+}
+
+.homepage__background--image {
     width: 100vw;
     max-width: 1920px;
     margin-top: calc(152px - calc(100vw * 0.1437));
