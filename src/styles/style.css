@@ -123,7 +123,10 @@ h3 {
     border: 0;
     display: inline-block;
     background-size: 100%;
-    left: 50%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
     position: absolute;
     opacity: 0.7;
     cursor: pointer;
@@ -145,12 +148,10 @@ h3 {
     color: #c9d5e3;
     font-weight: bold;
     font-size: 44px;
-    max-width: 400px;
 }
 
 .about-us__body {
     font-size: 14px;
-    max-width: 400px;
     margin: auto 0;
 }
 
@@ -313,6 +314,12 @@ h3 {
     }
     .about-us__content {
         padding-left: 40px;
+    }
+ }
+
+ @media (min-width: 600px) {
+    .about-us__header, .about-us__body {
+        max-width: 400px;
     }
  }
 
