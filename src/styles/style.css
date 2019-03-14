@@ -13,7 +13,7 @@ p {
 
 h2 {
   font-weight: bold;
-  font-size: 52px;
+  font-size: 32px;
 }
 h3 {
   font-weight: normal;
@@ -241,7 +241,6 @@ h3 {
 
 .contact__container > h2 {
   color: #ffffff;
-  font-size: 40px;
 }
 
 .contact__container {
@@ -281,13 +280,6 @@ h3 {
   text-decoration: none;
 }
 
-@media all and (min-width: 1690px) {
-  .homepage__header {
-    font-size: 60px;
-    max-width: 600px;
-  }
-}
-
 @media all and (min-width: 1280px) {
   .homepage__header {
     font-size: 60px;
@@ -312,6 +304,7 @@ h3 {
     font-size: 36px;
     max-width: 355px;
   }
+  
   .about-us__content {
     padding-left: 40px;
   }
@@ -349,8 +342,6 @@ h3 {
 @media (min-width: 768px) {
   .grid__container {
     width: 750px;
-    padding-left: 40px !important;
-    padding-right: 40px !important;
   }
 
   .grid__col-2 {
@@ -377,7 +368,7 @@ h3 {
   }
 
   .about-us__header {
-    font-size: 56px !important;
+    font-size: 44px !important;
     text-align: right;
   }
 
@@ -405,6 +396,10 @@ h3 {
 
   .breadcrumb {
     margin-left: 200px !important;
+  }
+
+  .about-us__header {
+    font-size: 56px !important;
   }
 
   #contact img {
