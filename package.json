@@ -12,9 +12,15 @@
     "gulp-copy": "^4.0.1",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "prettier": "1.16.4"
   },
   "scripts": {
     "build": "gulp"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
