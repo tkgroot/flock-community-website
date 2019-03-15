@@ -33,8 +33,6 @@ h3 {
   margin: 0 auto;
   -webkit-transition: width 0.3s ease;
   transition: width 0.3s ease;
-  padding-right: 40px !important;
-  padding-left: 40px !important;
 }
 
 .grid__container--padding {
@@ -45,6 +43,7 @@ h3 {
   content: ">>> ";
   color: #fcde00;
 }
+
 .breadcrumb {
   margin-bottom: 40px;
   font-style: italic;
@@ -140,10 +139,6 @@ h3 {
   justify-content: center;
 }
 
-.our-stories__accordion {
-  padding-inline-start: 0;
-}
-
 .about-us__header {
   color: #c9d5e3;
   font-weight: bold;
@@ -161,6 +156,7 @@ h3 {
 
 .our-stories__accordion {
   list-style-type: none;
+  padding-inline-start: 0px;
 }
 .our-stories__accordion--item a {
   text-decoration: none;
@@ -179,7 +175,7 @@ h3 {
 }
 
 .our-stories__accordion--content--illustration img {
-  width: 80%;
+  width: 100%;
 }
 
 .our-stories__accordion--content--illustration {
@@ -227,11 +223,18 @@ h3 {
   z-index: 0;
 }
 
+.contact__footer--image--container {
+  text-align: center;
+}
+
 .contact__footer--image {
   bottom: 0px;
   right: 0px;
   width: 40vw;
   height: 40vw;
+  width: 100%;
+  height: auto;
+  max-width: 700px;
 }
 
 #contact .grid__container {
@@ -260,12 +263,6 @@ h3 {
   left: -8%;
   transform: rotate(-10deg);
   background-color: #ffffff;
-}
-
-#contact img {
-  width: 100%;
-  height: auto;
-  max-width: 700px;
 }
 
 .contact__sub-header {
@@ -304,10 +301,6 @@ h3 {
     font-size: 36px;
     max-width: 355px;
   }
-  
-  .about-us__content {
-    padding-left: 40px;
-  }
 }
 
 @media (min-width: 600px) {
@@ -326,6 +319,11 @@ h3 {
   .grid__col-2 {
     margin-bottom: 40px;
   }
+  
+  .grid__container {
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+  }
 
   #homepage:before {
     height: 50px;
@@ -340,6 +338,7 @@ h3 {
 }
 
 @media (min-width: 768px) {
+  
   .grid__container {
     width: 750px;
   }
@@ -349,7 +348,11 @@ h3 {
   }
 
   .grid__col-2:first-child {
-    margin-right: 5%;
+    margin-right: 2.5%;
+  }
+
+  .grid__col-2:last-child {
+    margin-left: 2.5%;
   }
 
   .grid__col-3 {
@@ -359,7 +362,7 @@ h3 {
   }
 
   .breadcrumb {
-    margin-left: 70px;
+    margin-left: 15%;
   }
 
   .grid__row {
@@ -367,21 +370,21 @@ h3 {
     margin: 0 auto;
   }
 
+  .-active {
+    display: flex;
+  }
+
+  .-active .our-stories__accordion--content--illustration {
+    align-self: center;
+  }
+
   .about-us__header {
     font-size: 44px !important;
     text-align: right;
   }
 
-  .our-stories__accordion {
-    padding-inline-start: 40px !important;
-  }
-
   #contact:after {
     top: -25vw !important;
-  }
-
-  #contact img {
-    margin: 0 10vw;
   }
 
   .our-stories__accordion--content--inner {
@@ -394,16 +397,8 @@ h3 {
     width: 952px;
   }
 
-  .breadcrumb {
-    margin-left: 200px !important;
-  }
-
   .about-us__header {
     font-size: 56px !important;
-  }
-
-  #contact img {
-    margin: 0 15vw;
   }
 }
 
@@ -417,7 +412,7 @@ h3 {
     margin: 0 0 10% 200px !important;
   }
 
-  #contact img {
+  .contact__footer--image {
     margin: 0 0 0 40px !important;
     width: 40vw !important;
     position: absolute;

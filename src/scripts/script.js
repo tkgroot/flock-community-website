@@ -37,6 +37,11 @@ function toggleAccordionItem(elem) {
   }
 }
 
+window.addEventListener('resize', function() {
+  var activeAccordionItem = document.querySelector(ourStoriesConsts.contentActiveCls);
+  activeAccordionItem.style.maxHeight = activeAccordionItem.querySelector(ourStoriesConsts.contentInnerCls).scrollHeight + "px";
+});
+
 toggleAccordionItem(document.querySelector(ourStoriesConsts.contentCls));
 
 var scroll = new SmoothScroll("a[data-scroll]");
