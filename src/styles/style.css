@@ -30,6 +30,8 @@ h3 {
 }
 
 .grid__container {
+  padding-right: 40px !important;
+  padding-left: 40px !important;
   margin: 0 auto;
   -webkit-transition: width 0.3s ease;
   transition: width 0.3s ease;
@@ -37,6 +39,11 @@ h3 {
 
 .grid__container--padding {
   padding: 150px 0px;
+}
+
+.grid__col-3,
+.grid__col-2 {
+  margin-bottom: 40px;
 }
 
 .breadcrumb:before {
@@ -163,7 +170,6 @@ h3 {
 }
 
 .our-stories__accordion--content {
-  padding-left: 10px;
   border-left: 3px solid #fcde00;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -273,6 +279,10 @@ h3 {
   text-decoration: none;
 }
 
+#contact .breadcrumb {
+  margin-bottom: 60px;
+}
+
 @media all and (min-width: 1280px) {
   .homepage__header {
     font-size: 60px;
@@ -303,26 +313,6 @@ h3 {
   .-active {
     overflow: unset !important;
   }
-
-  .grid__col-3,
-  .grid__col-2 {
-    margin-bottom: 40px;
-  }
-  
-  .grid__container {
-    padding-right: 40px !important;
-    padding-left: 40px !important;
-  }
-
-  #contact .breadcrumb {
-    margin-bottom: 60px;
-  }
-
-  #homepage:before {
-    height: 50px;
-    background-color: white;
-    content: " ";
-  }
 }
 
 @media (min-width: 600px) {
@@ -334,13 +324,19 @@ h3 {
 
 @media (min-width: 768px) {
   .grid__container {
-    width: 750px;
+    width: 728px;
+    padding-left: 20px;
+    padding-right: 20px
   }
 
   .grid__col-2 {
     width: 45%;
   }
 
+  .our-stories__accordion--content {
+    padding-left: 10px;
+  }
+  
   .grid__col-2:first-child {
     margin-right: 2.5%;
   }
@@ -402,7 +398,7 @@ h3 {
 
 @media (min-width: 1200px) {
   .grid__container {
-    width: 1170px;
+    width: 1160px;
   }
 
   .contact__container {
