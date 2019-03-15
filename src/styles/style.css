@@ -149,7 +149,7 @@ h3 {
 .about-us__header {
   color: #c9d5e3;
   font-weight: bold;
-  font-size: 44px;
+  font-size: 40px;
 }
 
 .about-us__body {
@@ -196,7 +196,6 @@ h3 {
 .join-us__card {
   text-align: center;
   align-self: center;
-  padding: 0 5px;
 }
 
 .join-us__card--badge {
@@ -309,12 +308,6 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
-  .-active {
-    overflow: unset !important;
-  }
-}
-
 @media (min-width: 600px) {
   .about-us__header,
   .about-us__body {
@@ -330,7 +323,7 @@ h3 {
   }
 
   .grid__col-2 {
-    width: 45%;
+    width: 50%;
   }
 
   .our-stories__accordion--content {
@@ -338,15 +331,16 @@ h3 {
   }
   
   .grid__col-2:first-child {
-    margin-right: 2.5%;
+    padding-right: 20px;
   }
 
   .grid__col-2:last-child {
-    margin-left: 2.5%;
+    padding-left: 20px;
   }
-
+  
   .grid__col-3 {
     width: 33.33%;
+    padding: 0 10px;
     display: flex;
     justify-content: center;
   }
@@ -375,10 +369,6 @@ h3 {
 
   #contact:after {
     top: -25vw !important;
-  }
-
-  .our-stories__accordion--content--inner {
-    margin-right: 10%;
   }
 }
 
@@ -410,5 +400,27 @@ h3 {
     margin: 0 0 0 40px !important;
     width: 40vw !important;
     position: absolute;
+  }
+}
+
+@media (max-width: 768px) {
+  .-active {
+    overflow: unset !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .homepage__header {
+    font-size: 26px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 40px;
+  }
+
+  .homepage__container {
+    margin-top: 40px;
+  }
+  #contact .grid__container {
+    padding-top: 0;
   }
 }
