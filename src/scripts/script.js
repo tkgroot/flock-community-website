@@ -6,6 +6,21 @@ var ourStoriesConsts = {
   contentInnerCls: ".our-stories__accordion--content--inner"
 };
 
+var flockDays = [
+  '04-12-2019',
+  '04-26-2019',
+  '05-10-2019',
+  '05-24-2019',
+  '06-07-2019',
+  '06-21-2019',
+  '07-05-2019',
+  '07-19-2019'  
+];
+
+// Init
+toggleAccordionItem(document.querySelector(ourStoriesConsts.contentCls));
+setNextFlockDate();
+
 document.addEventListener("click", function(e) {
   if (e.target.classList.contains(ourStoriesConsts.header)) {
     var matchingAccordionElement = getItemFromCollectionByClassName(
@@ -14,6 +29,11 @@ document.addEventListener("click", function(e) {
     );
     toggleAccordionItem(matchingAccordionElement);
   }
+});
+
+window.addEventListener('resize', function() {
+  var activeAccordionItem = document.querySelector(ourStoriesConsts.contentActiveCls);
+  activeAccordionItem.style.maxHeight = activeAccordionItem.querySelector(ourStoriesConsts.contentInnerCls).scrollHeight + "px";
 });
 
 function getItemFromCollectionByClassName(HTMLCollection, className) {
@@ -37,11 +57,43 @@ function toggleAccordionItem(elem) {
   }
 }
 
-window.addEventListener('resize', function() {
-  var activeAccordionItem = document.querySelector(ourStoriesConsts.contentActiveCls);
-  activeAccordionItem.style.maxHeight = activeAccordionItem.querySelector(ourStoriesConsts.contentInnerCls).scrollHeight + "px";
-});
+function getFlockDateString(date) {
+  var dateObj = new Date(date);
+  var monthNames = [
+    "januari", "februari", "maart",
+    "april", "mei", "juni", "juli",
+    "augustus", "september", "oktober",
+    "november", "december"
+  ];
+  var dayNames = [
+    "zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag"
+  ];
 
-toggleAccordionItem(document.querySelector(ourStoriesConsts.contentCls));
+  var day = dateObj.getDate();
+  var dayOfWeekIndex = dateObj.getDay();
+  var monthIndex = dateObj.getMonth();
+
+  if (date) {
+    return 'De volgende Flock dag is op ' + dayNames[dayOfWeekIndex] + ', ' + day + ' ' + monthNames[monthIndex] + '.';
+  }
+  
+  return '';
+}
+
+function setNextFlockDate () {
+  var nextFlockDay = getFlockDateString(getNextDate(flockDays, new Date()));
+
+  document.querySelector('#next-flock-day').innerHTML = nextFlockDay;
+}
+
+function getNextDate(arr, val) {
+  for (var i=0; i < arr.length; i++) {
+    if (new Date(arr[i]) > val) {
+      return arr[i];
+    }
+  }
+  // No next date in array, add new flock days.
+  return false;
+}
 
 var scroll = new SmoothScroll("a[data-scroll]");
