@@ -74,7 +74,7 @@ function getFlockDateString(date) {
   var monthIndex = dateObj.getMonth();
 
   if (date) {
-    return 'De volgende Flock dag is op ' + dayNames[dayOfWeekIndex] + ', ' + day + ' ' + monthNames[monthIndex] + '.';
+    return 'De volgende Flock. dag is op ' + dayNames[dayOfWeekIndex] + ', ' + day + ' ' + monthNames[monthIndex] + '.';
   }
   
   return '';
