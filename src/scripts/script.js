@@ -29,6 +29,9 @@ document.addEventListener("click", function(e) {
     );
     toggleAccordionItem(matchingAccordionElement);
   }
+  if(e.target.classList.contains('hamburger__menu--link')) {
+    document.querySelector('.checkbox-toggle').click();
+  }
 });
 
 window.addEventListener('resize', function() {
