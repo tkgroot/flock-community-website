@@ -1,5 +1,8 @@
 .idea
 
+service-account.json
+secrets.tar
+
 node_modules/
 dist/
 .npmrc
