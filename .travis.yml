@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - 8
+cache:
+  directories:
+    - "$HOME/.npm-cache"
+before_install:
+  - openssl aes-256-cbc -K $encrypted_ba3c85f379ec_key -iv $encrypted_ba3c85f379ec_iv -in secrets.tar.enc -out secrets.tar -d
+  - tar xvf secrets.tar
+  - npm config set cache "$HOME/.npm-cache"
+script:
+  - npm run build
+deploy:
+  provider: gae
+  config: app.yaml
+  version: "$TRAVIS_BUILD_NUMBER"
+  project: flock-community-website
+  skip_cleanup: true
