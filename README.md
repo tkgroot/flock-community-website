@@ -2,6 +2,11 @@
 
 The https://www.flock-se.com website.
 
+## Build order
+
+1. run `npm run build` to build using `gulp`.
+2. run `npm run start` to build using `serve`.
+
 ## Gulp tasks
 
 In the project directory, you can run:
