@@ -17,8 +17,9 @@
     "prettier": "1.16.4"
   },
   "scripts": {
-    "build": "gulp",
-    "start": "serve ./dist"
+    "prestart": "gulp",
+    "start": "gulp serve",
+    "poststart": "gulp clean"
   },
   "husky": {
     "hooks": {
