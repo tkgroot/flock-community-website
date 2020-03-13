@@ -195,33 +195,24 @@ h3 {
 }
 
 .contact__footer--image--container {
-  text-align: center;
+  align-self: end;
 }
 
 .contact__footer--image {
-  bottom: 0px;
-  right: 0px;
-  width: 40vw;
-  height: 40vw;
-  width: 100%;
   height: auto;
-  max-width: 700px;
+  width: 100%;
 }
 
 #contact .grid__container {
-  padding-top: 20vw;
-  z-index: 1;
+  padding-top: 25vw;
 }
 
-.contact__container > h2 {
+#contact .grid__container > div {
+  margin: 0 auto;
+}
+
+#contact h2 {
   color: #ffffff;
-}
-
-.contact__container {
-  z-index: 5;
-  position: relative;
-  max-width: 500px;
-  margin: 0 auto 10% auto;
 }
 
 #contact:after {
@@ -246,10 +237,6 @@ h3 {
 .contact__links {
   color: #000000;
   text-decoration: none;
-}
-
-#contact .breadcrumb {
-  margin-bottom: 60px;
 }
 
 @media all and (min-width: 1280px) {
