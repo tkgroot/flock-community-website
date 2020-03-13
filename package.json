@@ -13,8 +13,9 @@
     "gulp-copy": "^4.0.1",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.1",
-    "prettier": "1.16.4"
+    "prettier": "1.16.4",
     "run-sequence": "^2.2.1"
   },
   "scripts": {
@@ -26,5 +27,9 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
-  "dependencies": {}
+  "dependencies": {},
+  "browserslist": [
+    "defaults",
+    "last 2 versions"
+  ]
 }

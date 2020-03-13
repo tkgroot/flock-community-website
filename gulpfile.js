@@ -3,6 +3,7 @@
 var browserSync = require("browser-sync").create()
 var runSequence = require("run-sequence")
 var autoprefixer = require('gulp-autoprefixer');
+var sourcemaps = require("gulp-sourcemaps")
 var csso = require('gulp-csso');
 var del = require('del');
 var gulp = require('gulp');
@@ -11,10 +12,13 @@ var uglify = require('gulp-uglify')
 var gulpCopy = require('gulp-copy');
 
 gulp.task('css', function () {
-  return gulp.src('./src/styles/*.css')
-    .pipe(autoprefixer({browsers: 'last 2 version'}))
+  return gulp.src("./src/styles/*.css")
+    .pipe(sourcemaps.init())
     .pipe(csso())
-    .pipe(gulp.dest('./dist/styles/'))
+    .pipe(autoprefixer())
+    .pipe(sourcemaps.write("./"))
+    .pipe(gulp.dest("./dist/styles/"))
+    .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task("css:watch", () => {
