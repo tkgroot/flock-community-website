@@ -19,7 +19,7 @@
   },
   "scripts": {
     "prestart": "gulp",
-    "start": "gulp serve",
+    "start": "gulp serve"
   },
   "husky": {
     "hooks": {
