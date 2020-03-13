@@ -62,7 +62,7 @@ gulp.task('clean', function() {
   return del(['dist'])
 });
 
-gulp.task("serve", () => {
+gulp.task("serve", ["html:watch", "js:watch", "css:watch", "assets:watch"], () => {
   browserSync.init({
     open: false,
     notify: true,
