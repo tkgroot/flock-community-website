@@ -121,23 +121,37 @@ h3 {
   z-index: 1;
 }
 
+/*
+ * about-us
+*/
 #about-us {
   background-image: url(../assets/images/Misc/about_bg.svg);
 }
 
-.about-us__content {
-  justify-content: center;
-}
-
-.about-us__header {
-  color: #c9d5e3;
-  font-weight: bold;
-  font-size: 40px;
-}
-
-.about-us__body {
-  font-size: 14px;
+.about-us__content>div {
+  display: flex;
+  flex-flow: column nowrap;
   margin: auto 0;
+}
+
+.about-us__content p {
+  max-width: 100%;
+  width: 400px;
+}
+
+.about-us__content>p {
+  color: #c9d5e3;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: end;
+}
+
+@media screen and (min-width: 992px) {
+  .about-us__content>p {
+    font-size: 56px;
+    line-height: 60px;
+  }
 }
 
 #our-stories {
