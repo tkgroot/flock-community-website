@@ -278,13 +278,6 @@ h3 {
   }
 }
 
-@media (min-width: 600px) {
-  .about-us__header,
-  .about-us__body {
-    max-width: 400px;
-  }
-}
-
 @media (min-width: 768px) {
   .grid__col-2 {
     width: 50%;
@@ -308,40 +301,6 @@ h3 {
   .grid__row {
     display: flex;
     margin: 0 auto;
-  }
-
-  .about-us__header {
-    font-size: 44px !important;
-    text-align: right;
-  }
-
-  #contact:after {
-    top: -25vw !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .about-us__header {
-    font-size: 56px !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  .contact__container {
-    max-width: 40% !important;
-    margin: 0 0 10% 200px !important;
-  }
-
-  .contact__footer--image {
-    margin: 0 0 0 40px !important;
-    width: 40vw !important;
-    position: absolute;
-  }
-}
-
-@media (max-width: 768px) {
-  .-active {
-    overflow: unset !important;
   }
 }
 
