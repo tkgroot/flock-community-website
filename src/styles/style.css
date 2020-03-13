@@ -204,6 +204,7 @@ h3 {
  * our-stories
 */
 #our-stories {
+  margin-top: 100px;
   overflow: hidden;
 }
 
@@ -218,6 +219,10 @@ h3 {
 /*
  * join-us 
 */
+#join-us {
+  margin-top: 100px;
+}
+
 .join-us__group-card > div {
   text-align: center;
 }
