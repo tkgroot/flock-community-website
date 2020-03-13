@@ -1,5 +1,6 @@
 'use strict';
 
+var browserSync = require("browser-sync").create()
 var autoprefixer = require('gulp-autoprefixer');
 var csso = require('gulp-csso');
 var del = require('del');
@@ -43,6 +44,16 @@ gulp.task('copy-root', function() {
 gulp.task('clean', function() {
   return del(['dist'])
 });
+
+gulp.task("serve", () => {
+  browserSync.init({
+    open: false,
+    notify: true,
+    server: {
+      baseDir: "./dist"
+    }
+  })
+})
 
 gulp.task('default',
   gulp.series('clean',
