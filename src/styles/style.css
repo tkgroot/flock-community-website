@@ -22,10 +22,6 @@ h3 {
   color: #fcde00;
 }
 
-.page__container {
-  max-width: 1920px;
-}
-
 .grid__col-3,
 .grid__col-2 {
   margin-bottom: 40px;
