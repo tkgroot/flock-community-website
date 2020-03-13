@@ -3,9 +3,6 @@
   align-items: center;
   justify-content: center;
 }
-* {
-  box-sizing: border-box;
-}
 a,
 a:visited,
 a:hover,
