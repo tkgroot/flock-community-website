@@ -27,7 +27,9 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  },
   "browserslist": [
     "defaults",
     "last 2 versions"
