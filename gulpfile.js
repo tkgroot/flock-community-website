@@ -21,6 +21,14 @@ gulp.task('css', function () {
     .pipe(browserSync.reload({stream: true}))
 });
 
+gulp.task("copy-bootstrap", () => {
+  var bootstrapDir = "./node_modules/bootstrap/dist/css";
+  return gulp.src([
+    `${bootstrapDir}/bootstrap-grid.min.css`,
+    `${bootstrapDir}/bootstrap-grid.min.css.map`
+  ]).pipe(gulp.dest("./dist/styles/"))
+})
+
 gulp.task("css:watch", () => {
   gulp.watch("./src/styles/**/*.css", ["css", browserSync.reload])
 })
@@ -79,6 +87,6 @@ gulp.task("serve", ["html:watch", "js:watch", "css:watch", "assets:watch"], () =
 gulp.task('default', (cb) => {
   runSequence(
     "clean",
-    ["html", "js", "css", "assets"],
+    ["html", "js", "css", "copy-bootstrap", "assets"],
     cb)
 })
