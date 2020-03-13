@@ -170,6 +170,7 @@ h3 {
  * about-us
 */
 #about-us {
+  margin-top: 100px;
   background-image: url(../assets/images/Misc/about_bg.svg);
 }
 
