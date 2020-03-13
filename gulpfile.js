@@ -1,6 +1,7 @@
 'use strict';
 
 var browserSync = require("browser-sync").create()
+var runSequence = require("run-sequence")
 var autoprefixer = require('gulp-autoprefixer');
 var csso = require('gulp-csso');
 var del = require('del');
@@ -71,6 +72,9 @@ gulp.task("serve", () => {
   })
 })
 
-gulp.task('default',
-  gulp.series('clean',
-    gulp.parallel('html', 'js', 'css', 'assets', 'copy-root')));
+gulp.task('default', (cb) => {
+  runSequence(
+    "clean",
+    ["html", "js", "css", "assets"],
+    cb)
+})
