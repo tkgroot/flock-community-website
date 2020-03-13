@@ -175,34 +175,18 @@ h3 {
 /*
  * join-us 
 */
-#join-us .breadcrumb {
-  margin-bottom: 60px;
-}
-
-.join-us__card {
+.join-us__group-card > div {
   text-align: center;
-  align-self: center;
 }
 
-.join-us__card--badge {
-  margin: 0 auto 20px;
-}
-
-.join-us__card--badge img {
+.join-us__group-card img {
   height: auto;
   width: 200px;
 }
 
-.join-us__card p {
-  max-width: 300px;
-  margin: 0 auto;
-}
-
-.join-us__container {
-  align-items: flex-start;
-  max-width: 960px;
-}
-
+/*
+ * contact
+*/
 #contact {
   background-color: #c4d7e4;
   position: relative;
