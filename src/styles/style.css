@@ -35,6 +35,9 @@ h3 {
   margin-right: 1rem;
 }
 
+/*
+ * topbar
+*/
 .topbar {
   background-color: #ffffff;
   overflow: hidden;
@@ -52,6 +55,28 @@ h3 {
   z-index: 5;
 }
 
+.cta-button {
+  content: " ";
+  background: url(../assets/images/Misc/cta_button.svg);
+  margin-top: -30%;
+  height: 50px;
+  width: 50px;
+  border: 0;
+  display: inline-block;
+  background-size: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/*
+ * homepage
+*/
 .homepage__container {
   position: absolute;
   z-index: 2;
@@ -100,23 +125,45 @@ h3 {
   margin-top: calc(152px - calc(100vw * 0.1437));
 }
 
-.cta-button {
-  content: " ";
-  background: url(../assets/images/Misc/cta_button.svg);
-  margin-top: -30%;
-  height: 50px;
-  width: 50px;
-  border: 0;
-  display: inline-block;
-  background-size: 100%;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  opacity: 0.7;
-  cursor: pointer;
-  z-index: 1;
+@media all and (min-width: 1280px) {
+  .homepage__header {
+    font-size: 60px;
+    max-width: 600px;
+  }
+}
+
+@media all and (min-width: 980px) and (max-width: 1279px) {
+  .homepage__header {
+    font-size: 50px;
+    max-width: 500px;
+  }
+}
+
+@media all and (min-width: 736px) and (max-width: 979px) {
+  .homepage__header {
+    font-size: 40px;
+    max-width: 450px;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 735px) {
+  .homepage__header {
+    font-size: 36px;
+    max-width: 355px;
+  }
+}
+
+@media (max-width: 400px) {
+  .homepage__header {
+    font-size: 26px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 40px;
+  }
+
+  .homepage__container {
+    margin-top: 40px;
+  }
 }
 
 /*
@@ -232,42 +279,4 @@ h3 {
 .contact__links {
   color: #000000;
   text-decoration: none;
-}
-
-@media all and (min-width: 1280px) {
-  .homepage__header {
-    font-size: 60px;
-    max-width: 600px;
-  }
-}
-
-@media all and (min-width: 980px) and (max-width: 1279px) {
-  .homepage__header {
-    font-size: 50px;
-    max-width: 500px;
-  }
-}
-@media all and (min-width: 736px) and (max-width: 979px) {
-  .homepage__header {
-    font-size: 40px;
-    max-width: 450px;
-  }
-}
-@media all and (min-width: 480px) and (max-width: 735px) {
-  .homepage__header {
-    font-size: 36px;
-    max-width: 355px;
-  }
-}
-@media (max-width: 400px) {
-  .homepage__header {
-    font-size: 26px;
-    margin: 0 auto;
-    width: 100%;
-    padding-left: 40px;
-  }
-
-  .homepage__container {
-    margin-top: 40px;
-  }
 }
