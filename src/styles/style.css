@@ -26,19 +26,6 @@ h3 {
 
 .page__container {
   max-width: 1920px;
-  margin: 0 auto;
-}
-
-.grid__container {
-  padding-right: 40px !important;
-  padding-left: 40px !important;
-  margin: 0 auto;
-  -webkit-transition: width 0.3s ease;
-  transition: width 0.3s ease;
-}
-
-.grid__container--padding {
-  padding: 150px 0px;
 }
 
 .grid__col-3,
@@ -318,12 +305,6 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  .grid__container {
-    width: 728px;
-    padding-left: 20px;
-    padding-right: 20px
-  }
-
   .grid__col-2 {
     width: 50%;
   }
@@ -379,20 +360,12 @@ h3 {
     padding-top: 11vw;
   }
 
-  .grid__container {
-    width: 952px;
-  }
-
   .about-us__header {
     font-size: 56px !important;
   }
 }
 
 @media (min-width: 1200px) {
-  .grid__container {
-    width: 1160px;
-  }
-
   .contact__container {
     max-width: 40% !important;
     margin: 0 0 10% 200px !important;
