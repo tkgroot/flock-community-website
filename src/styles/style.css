@@ -226,7 +226,7 @@ h3 {
 }
 
 #contact .grid__container {
-  padding-top: 9vw;
+  padding-top: 20vw;
   z-index: 1;
 }
 
@@ -354,10 +354,6 @@ h3 {
 }
 
 @media (min-width: 992px) {
-  #contact .grid__container {
-    padding-top: 11vw;
-  }
-
   .about-us__header {
     font-size: 56px !important;
   }
@@ -392,8 +388,5 @@ h3 {
 
   .homepage__container {
     margin-top: 40px;
-  }
-  #contact .grid__container {
-    padding-top: 0;
   }
 }
