@@ -31,13 +31,17 @@
       href="assets/images/Logo/favicon-16x16.png"
     />
     <link rel="manifest" href="./site.webmanifest" />
-    <link rel="mask-icon" href="assets/images/Logo/safari-pinned-tab.svg" color="#5bbad5" />
+    <link
+      rel="mask-icon"
+      href="assets/images/Logo/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
     <meta name="msapplication-TileColor" content="#00aba9" />
     <meta name="theme-color" content="#ffffff" />
 
     <title>Flock. - Software Engineering Community</title>
 
-    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./styles/social-icons.css" />
     <link rel="stylesheet" href="./styles/menu.css" />
 
@@ -60,29 +64,45 @@
           <div>
             <div>
               <ul>
-                <li><a class="hamburger__menu--link" data-scroll href="#about-us">Over ons</a></li>
-                <li><a class="hamburger__menu--link" data-scroll href="#our-stories">Ons verhaal</a></li>
-                <li><a class="hamburger__menu--link" data-scroll href="#join-us">Doe mee</a></li>
-                <li><a class="hamburger__menu--link" data-scroll href="#contact">Contact</a></li>
+                <li>
+                  <a class="hamburger__menu--link" data-scroll href="#about-us"
+                    >Over ons</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hamburger__menu--link"
+                    data-scroll
+                    href="#our-stories"
+                    >Ons verhaal</a
+                  >
+                </li>
+                <li>
+                  <a class="hamburger__menu--link" data-scroll href="#join-us"
+                    >Doe mee</a
+                  >
+                </li>
+                <li>
+                  <a class="hamburger__menu--link" data-scroll href="#contact"
+                    >Contact</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="page__container">
-      <section id="homepage">
-        <div class="homepage__container">
-          <div class="grid__container">
-            <p class="breadcrumb">Software Engineering community</p>
-          </div>
+    <main>
+      <section class="container-fluid" id="homepage">
+        <div class="row homepage__container">
           <div class="homepage__content">
             <h2 class="homepage__header">
               DE WERELD <i class="flock--yellow">SAMEN</i> INSPIREREN
             </h2>
           </div>
         </div>
-        <div class="homepage__background--container">
+        <div class="row homepage__background--container">
           <div class="homepage__background--diagonal"></div>
           <img
             class="homepage__background--image"
@@ -93,106 +113,67 @@
         <a data-scroll href="#contact" class="cta-button"></a>
       </section>
 
-      <section id="about-us" class="grid__container grid__container--padding">
-        <p class="breadcrumb">Over ons</p>
-        <div class="grid__row about-us__content">
-          <div class="grid__col-2 about-us__header">
-            <div>Wij zijn een community van software engineers</div>
-          </div>
-          <div class="grid__col-2 about-us__body">
-            <div>
-              <p>
-                Flock. is een community waar software engineers vol passie
-                samenwerken. We delen kennis, inspireren elkaar en maken samen
-                mooie software.
-              </p>
-              <p>
-                Het allerbelangrijkste bij Flock. is dat jij kan doen wat je leuk vindt.
-              </p>
-            </div>
+      <section id="about-us" class="container">
+        <h2 class="row breadcrumb">Over ons</h2>
+        <div class="row about-us__content">
+          <p class="col-md-6">
+            Wij zijn een community van software engineers
+          </p>
+          <div class="col-md-6">
+            <p>
+              Flock. is een community waar software engineers vol passie
+              samenwerken. We delen kennis, inspireren elkaar en maken samen
+              mooie software.
+            </p>
+            <p>
+              Het allerbelangrijkste bij Flock. is dat jij kan doen wat je leuk
+              vindt.
+            </p>
           </div>
         </div>
       </section>
 
-      <section
-        id="our-stories"
-        class="grid__container grid__container--padding"
-      >
-        <p class="breadcrumb">Ons verhaal</p>
-        <div class="grid__row our-stories__container">
-          <ul class="our-stories__accordion">
-            <li class="our-stories__accordion--item">
-              <a class="flock--yellow"
-                ><h3 class="our-stories__accordion--header">
-                  Google assistent
-                </h3></a
-              >
-              <div class="our-stories__accordion--content">
-                <div class="grid__col-2 our-stories__accordion--content--inner">
-                  <p>
-                      Wij hebben de Google Assistent met bol.com verbonden en daar een blog over geschreven om mede software engineers te inspireren. Met deze assistent kunnen we technologie gebruiken op een natuurlijke manier, door er mee te praten. Bol.com stimuleert partijen om hun platform te gebruiken door API’s open te stellen.
-                  </p>  
-                  <p>
-                      We hebben de Catalog API van bol.com en DialogFlow van Google gebruikt om zogenoemde ‘Intents’ te maken die door Natural Language Processing (NLP) geïnterpreteerd kunnen worden en zo naar producten te zoeken. Door de combinatie van DialogFlow en NLP bleek dat een platte structuur en een rijke context de beste manier was om gesprekken te modelleren. Het toevoegen van een Natural Language Interface aan een API creëert interessante nieuwe scenario’s voor de interactie met machines door mensen. Doorgaans geeft een API een uitgebreide output die door de gebruiker wordt gefilterd. Wanneer je met spraak communiceert met een API moet de reactie duidelijk en precies zijn. Data kwaliteit is belangrijk, maar precisie heeft prioriteit voor een goede ervaring met natuurlijke talen. 
-
-                  </p>
-                </div>
-                <div
-                  class="grid__col-2 our-stories__accordion--content--illustration"
-                >
-                  <img src="assets/images/Photos/side-view-cmp.jpg" alt="zeven software engineers in gesprek" />
-                </div>
-              </div>
-            </li>
-            <!-- <li class="our-stories__accordion--item">
-              <a class="flock--yellow"
-                ><h3 class="our-stories__accordion--header">
-                  Google assistent
-                </h3></a
-              >
-              <div class="our-stories__accordion--content">
-                <div class="our-stories__accordion--content--inner">
-                  <p>
-                    Flock heeft ervaring met google assistant applicaties
-                    ontwikkelen (zie: vorige blog post)
-                  </p>
-                  <p>
-                    We observeren een test "gat" bij ontwikkelen van deze
-                    applicaties. Ze moeten manueel getest worden om te
-                    garanderen dat alle "conversation flows" door het systeem
-                    blijven werken. Naar aanleiding daarvan heeft Flock een test
-                    framework ontwikkelt om deze flows geautomatiseerd te
-                    testen.
-                  </p>
-                  <p>
-                    Cucumber is de aangewezen tooling voor dit probleem: het kan
-                    scenario's in natuurlijke taal vertalen naar stappen die
-                    tegen de applicatie getest kunnen worden. Elke stap
-                    representeert een input (Als ik zeg "...") of een output
-                    (Dan zegt de assistent "..."). Hierdoor zijn de
-                    "conversation flows" opgeschreven als een "executable
-                    specification"; het geeft weer wat de applicatie allemaal
-                    kan dmv voobeeld conversaties en test gelijkertijd dat die
-                    conversaties mogelijk zijn.
-                  </p>
-                  <p>
-                    Dit test framework is uitgerold bij Bol.com op black friday
-                    2018. Er wordt verder aan door ontwikkeld om ook alle flows
-                    op de telefoon te kunnen testen. Hier kan de assistent naast
-                    tekst ook reageren met visuele middelen.
-                  </p>
-                </div>
-              </div>
-            </li> -->
-          </ul>
+      <section id="our-stories" class="container">
+        <h2 class="row breadcrumb">Ons verhaal</h2>
+        <h3 class="row flock--yellow">Google assistent</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              Wij hebben de Google Assistent met bol.com verbonden en daar een
+              blog over geschreven om mede software engineers te inspireren. Met
+              deze assistent kunnen we technologie gebruiken op een natuurlijke
+              manier, door er mee te praten. Bol.com stimuleert partijen om hun
+              platform te gebruiken door API’s open te stellen.
+            </p>
+            <p>
+              We hebben de Catalog API van bol.com en DialogFlow van Google
+              gebruikt om zogenoemde ‘Intents’ te maken die door Natural
+              Language Processing (NLP) geïnterpreteerd kunnen worden en zo naar
+              producten te zoeken. Door de combinatie van DialogFlow en NLP
+              bleek dat een platte structuur en een rijke context de beste
+              manier was om gesprekken te modelleren. Het toevoegen van een
+              Natural Language Interface aan een API creëert interessante nieuwe
+              scenario’s voor de interactie met machines door mensen. Doorgaans
+              geeft een API een uitgebreide output die door de gebruiker wordt
+              gefilterd. Wanneer je met spraak communiceert met een API moet de
+              reactie duidelijk en precies zijn. Data kwaliteit is belangrijk,
+              maar precisie heeft prioriteit voor een goede ervaring met
+              natuurlijke talen.
+            </p>
+          </div>
+          <img
+            class="col-md-6"
+            src="assets/images/Photos/side-view-cmp.jpg"
+            alt="zeven software engineers in gesprek"
+          />
         </div>
       </section>
-      <section id="join-us" class="grid__container grid__container--padding">
-        <p class="breadcrumb margin-bottom">Doe mee</p>
-        <div class="grid__row join-us__container">
-          <div class="grid__col-3">
-            <div class="join-us__card">
-              <div class="join-us__card--badge">
+      <section id="join-us" class="container">
+        <h2 class="row breadcrumb">Doe mee</h2>
+        <div class="row join-us__group-card">
+          <div class="col-md-4">
+            <div class="">
+              <div class="">
                 <img
                   src="assets/images/Icons/ICON_Flock_Days_Motion.gif"
                   alt="Flock dagen"
@@ -204,9 +185,9 @@
               </p>
             </div>
           </div>
-          <div class="grid__col-3">
-            <div class="join-us__card">
-              <div class="join-us__card--badge">
+          <div class="col-md-4">
+            <div class="">
+              <div class="">
                 <img
                   src="assets/images/Icons/ICON_Drinks_Motion.gif"
                   alt="Borrels"
@@ -217,9 +198,9 @@
               </p>
             </div>
           </div>
-          <div class="grid__col-3">
-            <div class="join-us__card">
-              <div class="join-us__card--badge">
+          <div class="col-md-4">
+            <div class="">
+              <div class="">
                 <img
                   src="assets/images/Icons/ICON_MeetUp_Motion.gif"
                   alt="Meetups"
@@ -234,10 +215,9 @@
         </div>
       </section>
 
-      <section id="contact">
-        <div class="grid__container">
-          <p class="breadcrumb">Contact</p>
-          <div class="contact__container">
+      <section id="contact" class="container-fluid">
+        <div class="row grid__container">
+          <div class="col-md-6">
             <h2>Samen sparren? Flock engineer worden?</h2>
             <p class="contact__sub-header">
               Je bent altijd welkom op ons kantoor voor een kop koffie.
@@ -270,16 +250,16 @@
               </span>
             </a>
           </div>
-        </div>
-        <div class="contact__footer--image--container">
-          <img
+          <div class="col-md-6 contact__footer--image--container">
+            <img
             src="assets/images/Photos/top-down-cmp.jpg"
             alt=""
             class="contact__footer--image"
-          />
+            />
+          </div>
         </div>
       </section>
-    </div>
+    </main>
   </body>
   <link href="./styles/fonts.css" rel="stylesheet" lazyload />
   <script type="text/javascript" src="./scripts/smooth-scroll.min.js"></script>
