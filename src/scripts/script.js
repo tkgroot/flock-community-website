@@ -1,5 +1,5 @@
 var ourStoriesConsts = {
-  header: "our-stories__accordion--header",
+  header: "homepage__header",
   content: "our-stories__accordion--content",
   contentCls: ".our-stories__accordion--content",
   contentActiveCls: ".our-stories__accordion--content.-active",
@@ -47,6 +47,7 @@ function getItemFromCollectionByClassName(HTMLCollection, className) {
 }
 
 function toggleAccordionItem(elem) {
+  if (!elem) return
   var prevElem = document.querySelector(ourStoriesConsts.contentActiveCls);
 
   if (!elem.style.maxHeight || prevElem !== elem) {
