@@ -1,15 +1,16 @@
 'use strict';
 
-var browserSync = require("browser-sync").create()
-var runSequence = require("run-sequence")
+var browserSync = require("browser-sync").create();
+var runSequence = require("run-sequence");
 var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require("gulp-sourcemaps")
+var sourcemaps = require("gulp-sourcemaps");
 var csso = require('gulp-csso');
 var del = require('del');
 var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
-var uglify = require('gulp-uglify')
+var uglify = require('gulp-uglify');
 var gulpCopy = require('gulp-copy');
+var imagemin = require('gulp-imagemin')
 
 gulp.task('css', function () {
   return gulp.src("./src/styles/*.css")
@@ -57,7 +58,15 @@ gulp.task("html:watch", () => {
 })
 
 gulp.task('assets', function() {
+  var plugins = [
+    imagemin.gifsicle({interlaced: true}),
+    imagemin.mozjpeg({quality: 75, progressive: true}),
+    imagemin.optipng({optimizationLevel: 5}),
+    imagemin.svgo({plugins: [{removeViewBox: true}, {cleanupIDs: false}]})
+  ]
+
   return gulp.src(['./src/assets/**/*'])
+    .pipe(imagemin(plugins))
     .pipe(gulp.dest('./dist/assets'));
 });
 

@@ -14,7 +14,7 @@
   font-size: 24px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .nav-menu {
     display: flex;
   }

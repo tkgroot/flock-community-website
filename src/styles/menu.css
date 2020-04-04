@@ -18,8 +18,8 @@ h1 {
 .outer-menu {
   position: relative;
   z-index: 4;
-  padding-right: 40px;
-  top: -25px;
+  padding-right: 70px;
+  top: -30px;
 }
 .outer-menu .checkbox-toggle {
   position: absolute;
@@ -179,7 +179,7 @@ h1 {
   transition: width 0.4s ease;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .outer-menu {
     display: none;
   }
