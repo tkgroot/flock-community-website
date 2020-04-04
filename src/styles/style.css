@@ -97,21 +97,35 @@ h3 {
   margin: 0;
 }
 
-.homepage__background--image {
+.homepage__background {
   width: 100%;
+  overflow: hidden;
+}
+
+.homepage__background--image {
+  width: 150%;
+  margin-left: -25%;
   object-fit: cover;
+}
+
+@media screen and (min-width: 992px) {
+  .homepage__background--image {
+    width: 100%;
+    margin-left: 0;
+    object-fit: cover;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .homepage__headline {
     position: absolute;
-    top: 5px;
+    top: 20px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .homepage__headline {
-    font-size: 60px;
+    font-size: 42px;
     position: absolute;
     top: 24px;
   }
@@ -121,7 +135,7 @@ h3 {
  * about-us
 */
 #about-us {
-  margin-top: 100px;
+  margin-top: 50px;
   background-image: url(../assets/images/Misc/about_bg.svg);
 }
 
