@@ -10,8 +10,7 @@ var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
 var gulpCopy = require('gulp-copy');
-var svgmin = require('gulp-svgmin');
-var gulpif = require('gulp-if')
+var imagemin = require('gulp-imagemin')
 
 gulp.task('css', function () {
   return gulp.src("./src/styles/*.css")
@@ -59,8 +58,15 @@ gulp.task("html:watch", () => {
 })
 
 gulp.task('assets', function() {
+  var plugins = [
+    imagemin.gifsicle({interlaced: true}),
+    imagemin.mozjpeg({quality: 75, progressive: true}),
+    imagemin.optipng({optimizationLevel: 5}),
+    imagemin.svgo({plugins: [{removeViewBox: true}, {cleanupIDs: false}]})
+  ]
+
   return gulp.src(['./src/assets/**/*'])
-    .pipe(gulpif('*.svg', svgmin()))
+    .pipe(imagemin(plugins))
     .pipe(gulp.dest('./dist/assets'));
 });
 
