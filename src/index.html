@@ -8,7 +8,7 @@
     />
     <meta
       name="viewport"
-      content="width=device-width,initial-scale=1,viewport-fit=cover"
+      content="width=device-width,initial-scale=1"
     />
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -43,81 +43,54 @@
 
     <link rel="stylesheet" href="./styles/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./styles/social-icons.css" />
-    <link rel="stylesheet" href="./styles/menu.css" />
+    <!-- <link rel="stylesheet" href="./styles/menu.css" /> -->
     <link rel="stylesheet" href="./styles/navMenu.css" />
 
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
   <body>
-    <div class="topbar">
-      <img
-        class="topbar__logo"
-        src="assets/images/Logo/logo_community.svg"
-        alt="flock. logo"
-      />
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">
+        <img
+          class="flock-community-logo"
+          src="assets/images/Logo/logo_community.svg"
+          alt="flock.community logo"
+        />
+        <img
+          class="flock-simple-logo"
+          src="assets/images/Logo/logo.svg"
+          alt="flock.community logo"
+        />
+      </a>
+      <button class="navbar-toggler collapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="nav-menu">
-        <ul>
+        <ul class="navbar-collapse">
           <li>
-            <a class="hamburger__menu--link" data-scroll href="#about-us"
+            <a class="hamburger__menubar--link" data-scroll href="#about-us"
               >Over ons</a
             >
           </li>
           <li>
-            <a class="hamburger__menu--link" data-scroll href="#our-stories"
+            <a class="hamburger__menubar--link" data-scroll href="#our-stories"
               >Ons verhaal</a
             >
           </li>
           <li>
-            <a class="hamburger__menu--link" data-scroll href="#join-us"
+            <a class="hamburger__menubar--link" data-scroll href="#join-us"
               >Doe mee</a
             >
           </li>
           <li>
-            <a class="hamburger__menu--link" data-scroll href="#contact"
+            <a class="hamburger__menubar--link" data-scroll href="#contact"
               >Contact</a
             >
           </li>
         </ul>
       </div>
-      <div class="outer-menu">
-        <input class="checkbox-toggle" type="checkbox" />
-        <div class="hamburger">
-          <div></div>
-        </div>
-        <div class="menu">
-          <div>
-            <div>
-              <ul>
-                <li>
-                  <a class="hamburger__menu--link" data-scroll href="#about-us"
-                    >Over ons</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="hamburger__menu--link"
-                    data-scroll
-                    href="#our-stories"
-                    >Ons verhaal</a
-                  >
-                </li>
-                <li>
-                  <a class="hamburger__menu--link" data-scroll href="#join-us"
-                    >Doe mee</a
-                  >
-                </li>
-                <li>
-                  <a class="hamburger__menu--link" data-scroll href="#contact"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </nav>
     <main>
       <section class="container-fluid" id="homepage">
         <div class="row homepage__container">
