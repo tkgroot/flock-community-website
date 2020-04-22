@@ -79,6 +79,7 @@
 }
 
 .nav-menu li a {
+  color: inherit;
   cursor: pointer;
   text-decoration: none;
 }
