@@ -1,7 +1,8 @@
 # Custom Ignore
 service-account.json
 secrets.tar
-
+public/
+storybook-static/
 
 # Created by https://www.gitignore.io/api/node,react,linux,macos,windows,intellij,sublimetext,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=node,react,linux,macos,windows,intellij,sublimetext,visualstudiocode

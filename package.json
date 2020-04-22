@@ -8,7 +8,9 @@
   "license": "ISC",
   "scripts": {
     "start": "echo \"Error: no start script specified\" && exit 1",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "storybook": "start-storybook --host 0.0.0.0 --port 9001",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "bootstrap": "^4.4.1"
@@ -18,9 +20,18 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@commitlint/format": "^8.3.4",
-    "@storybook/html": "^5.3.18",
+    "@storybook/addon-a11y": "^5.3.18",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-backgrounds": "^5.3.18",
+    "@storybook/addon-docs": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
     "babel-loader": "^8.1.0",
     "browser-sync": "^2.26.7",
+    "concurrently": "^5.1.0",
+    "css-loader": "^3.5.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.11.0",
@@ -30,6 +41,12 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
     "prettier": "^2.0.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.4",
     "stylelint": "^13.3.3",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-sass-guidelines": "^7.0.0",
