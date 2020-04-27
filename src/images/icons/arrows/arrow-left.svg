@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Arrows" transform="translate(-223.000000, -72.000000)" stroke="#383302" stroke-width="2">
+            <g id="arrow-left" transform="translate(232.000000, 80.000000) rotate(90.000000) translate(-232.000000, -80.000000) translate(225.000000, 73.000000)">
+                <polyline id="Rectangle-65" transform="translate(7.000000, 7.048951) rotate(45.000000) translate(-7.000000, -7.048951) " points="11.9295775 2.15384615 11.9295775 11.9440559 2.07042254 11.9440559"></polyline>
+                <path d="M7,1.04895105 L7,12.7589511" id="Line" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>
