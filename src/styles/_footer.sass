@@ -1,0 +1,93 @@
+/// Footer
+.page-footer
+  +media-breakpoint-up(lg)
+    +flexbox(row, wrap)
+    padding: $spacer
+    padding-right: $footer-image-width
+  background-color: $brown
+  color: $white
+  min-height: calc(#{$footer-image-height} + #{$spacer})
+  padding: $spacer $spacer $footer-image-height
+  position: relative
+
+  &:after
+    position: absolute
+    background-image: url("images/tetris-game.svg") // url relative to the styles.scss file
+    content: ""
+    bottom: 0
+    height: $footer-image-height
+    right: 0
+    width: $footer-image-width
+
+  h5
+    color: $white
+    font-weight: $font-weight-normal
+    margin-bottom: $footer-headings-margin-bottom
+    position: relative
+
+    &::after
+      background-color: $yellow
+      content: ""
+      position: absolute
+      bottom: -5px
+      left: 0
+      height: 3px
+      width: 40px
+
+  & hr
+    +media-breakpoint-up(md)
+      flex-basis: 100%
+    background-color: $yellow
+    border: 2px solid
+    color: $yellow
+    margin-top: map-get($spacers, 2)
+    margin-bottom: map-get($spacers, 2)
+
+  & > img
+    align-self: flex-start
+    margin-right: $spacer * 2
+
+  & .nav-group
+    +media-breakpoint-up(md)
+      flex-flow: row nowrap
+      flex: 2
+      justify-content: space-between
+    display: flex
+    flex-flow: column nowrap
+    padding-top: $spacer
+
+
+  & .nav-group-item
+    flex: 1 1
+    flex-basis: 0px
+    max-width: 300px
+
+    &:nth-child(n)
+      +media-breakpoint-up(lg)
+        margin: 0
+      margin-top: $spacer
+
+    ul
+      list-style: none
+      margin: 0 .25rem
+      padding: 0
+
+    li
+      margin-bottom: $spacer / 2
+      margin-top: $spacer / 2
+
+.footer-icons
+  display: block
+
+  & .icon-link-group
+    & > img
+      height: $footer-icon-max-height
+
+.footer-link
+  color: $white
+  padding: 5px
+  text-decoration: none
+
+  &:hover
+    border-left: 3px solid $yellow
+    margin-left: -3px

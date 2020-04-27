@@ -1,0 +1,10 @@
+/// bootstrap/scss/utilities/_background.scss
+
+@each $color, $value in $colors
+  +bg-variant(".bg-#{$color}", $value)
+
+.bg-white
+  background-color: $white
+
+.bg-transparent
+  background-color: transparent

@@ -1,0 +1,35 @@
+/// Box
+
+.box
+  +media-breakpoint-up(md)
+    +flexbox(row, wrap)
+  +flexbox(column, nowrap)
+  align-items: center
+
+  & h3
+    +font-size($h1-font-size)
+
+  & p
+    +font-size($font-size-lg)
+
+  & figure
+    text-align: center
+
+    & > img
+      max-width: 100% // prevent image to run out of boundaries
+
+  & .box-content
+    margin-left: auto
+    margin-right: auto
+    width: 80%
+
+.box--reverted
+  +media-breakpoint-up(md)
+    & > figure
+      order: 2
+    & > div
+      order: 1
+
+.box-height
+  height: $box-height
+  max-height: map-get($grid-breakpoints, md)

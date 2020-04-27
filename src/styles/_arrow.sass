@@ -1,0 +1,25 @@
+/// arrow
+
+.arrow
+  height: $arrow-box-size
+  width: $arrow-box-size
+
+  &.arrow-box
+    background-color: transparentize($black, .4)
+    color: $yellow
+
+  & img
+    padding: .75rem
+    width: 100%
+
+  &.positioned-right,
+  &.positioned-left
+    position: absolute
+
+  &.positioned-right
+    right: 0
+    top: 0
+
+  &.positioned-left
+    left: 0
+    top: 0
