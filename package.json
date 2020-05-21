@@ -9,6 +9,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop --host 0.0.0.0 --port 8000",
+    "develop:sync": "browser-sync",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "concurrently \"npm:storybook\" \"npm:develop\"",
     "serve": "gatsby serve",
@@ -18,7 +19,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1"
+    "bootstrap": "^4.4.1",
+    "rfs": "^9.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
