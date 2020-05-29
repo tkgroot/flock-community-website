@@ -1,10 +1,18 @@
 {
   "name": "flock-community-website",
   "version": "1.0.0",
-  "description": "The https://www.flock-se.com website",
+  "description": "The flock community website",
+  "homepage": "https://www.flock.community",
   "main": "./src/index.html",
   "author": "Willem Kersten",
   "license": "ISC",
+  "scripts": {
+    "start": "echo \"Error: no start script specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@storybook/html": "^5.3.18",
@@ -12,20 +20,20 @@
     "browser-sync": "^2.26.7",
     "prettier": "^2.0.5"
   },
-  "scripts": {
-    "start": "echo \"Error: no start script specified\" && exit 1",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "browserslist": [
+    "defaults",
+    "last 2 versions"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
   },
-  "dependencies": {
-    "bootstrap": "^4.4.1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flock-community/flock-community-website"
   },
-  "browserslist": [
-    "defaults",
-    "last 2 versions"
-  ]
+  "bugs": {
+    "url": "https://github.com/flock-community/flock-community-website/issues"
+  }
 }
