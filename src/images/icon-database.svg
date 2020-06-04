@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="181px" height="150px" viewBox="0 0 181 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-database</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="19.948801%" y1="80.4371129%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F8E008" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TechStack-Desktop" transform="translate(-727.000000, -524.000000)">
+            <g id="icon-database" transform="translate(727.000000, 524.000000)">
+                <path d="M96.3732671,150 C151.43234,150 195.162692,83.3870961 176.709628,51.8081088 C158.256565,20.2291214 111.152178,61.9865365 61.7304924,61.9865365 C12.3088067,61.9865365 -7.94748982,54.6561564 2.80686863,86.2351438 C13.5612271,117.814131 41.3141943,150 96.3732671,150 Z" id="Oval-22" fill="url(#linearGradient-1)"></path>
+                <g id="server" transform="translate(66.000000, 49.500000) rotate(-90.000000) translate(-66.000000, -49.500000) translate(17.000000, 32.000000)">
+                    <rect id="Rectangle-59" fill="#201D1D" x="0" y="0" width="98" height="35"></rect>
+                    <g id="lights" transform="translate(65.650485, 4.861111)">
+                        <rect id="Rectangle-7-Copy" fill="#88C41A" x="19.2472182" y="0.220959596" width="7.13592233" height="7.42777765" rx="2.53439989"></rect>
+                        <rect id="Rectangle-7-Copy-8" fill="#F8E008" x="9.73265511" y="0.220959596" width="7.13592233" height="7.42777765" rx="2.53439989"></rect>
+                        <rect id="Rectangle-7-Copy-9" fill="#F8E008" x="0.218092001" y="0.220959596" width="7.13592233" height="7.42777765" rx="2.53439989"></rect>
+                    </g>
+                </g>
+                <g transform="translate(58.000000, 48.000000)">
+                    <g id="stack-copy-5" transform="translate(0.000000, 35.882353)">
+                        <path d="M72,19.6127722 L72,4.97637505 C72,4.97637505 72,9.58684016 36,9.87956811 C-1.11981535e-14,9.58684016 -7.10542736e-15,4.97637505 -7.10542736e-15,4.97637505 L-7.10542736e-15,19.6127722 C0.000322706741,19.6249588 -7.10542736e-15,19.6371558 -7.10542736e-15,19.6493632 C-7.10542736e-15,22.3775306 16.117749,24.5891473 36,24.5891473 C55.882251,24.5891473 72,22.3775306 72,19.6493632 C72,19.6371558 71.9996773,19.6249588 71.999033,19.6127722 Z" id="Combined-Shape" fill="#201D1D"></path>
+                        <ellipse id="top-copy" fill="#FFFFFF" cx="36" cy="4.93978405" rx="36" ry="4.93978405"></ellipse>
+                        <ellipse id="top" fill-opacity="0.5" fill="#201D1D" cx="36" cy="4.93978405" rx="36" ry="4.93978405"></ellipse>
+                    </g>
+                    <g id="stack-copy-4" transform="translate(0.000000, 17.941176)">
+                        <path d="M72,19.6127722 L72,4.97637505 C72,4.97637505 72,9.58684016 36,9.87956811 C-1.11981535e-14,9.58684016 -7.10542736e-15,4.97637505 -7.10542736e-15,4.97637505 L-7.10542736e-15,19.6127722 C0.000322706741,19.6249588 -7.10542736e-15,19.6371558 -7.10542736e-15,19.6493632 C-7.10542736e-15,22.3775306 16.117749,24.5891473 36,24.5891473 C55.882251,24.5891473 72,22.3775306 72,19.6493632 C72,19.6371558 71.9996773,19.6249588 71.999033,19.6127722 Z" id="Combined-Shape" fill="#201D1D"></path>
+                        <ellipse id="top-copy" fill="#FFFFFF" cx="36" cy="4.93978405" rx="36" ry="4.93978405"></ellipse>
+                        <ellipse id="top" fill-opacity="0.5" fill="#201D1D" cx="36" cy="4.93978405" rx="36" ry="4.93978405"></ellipse>
+                    </g>
+                    <g id="stack-copy">
+                        <path d="M72,19.6127722 L72,4.97637505 C72,4.97637505 72,9.58684016 36,9.87956811 C-1.11981535e-14,9.58684016 -7.10542736e-15,4.97637505 -7.10542736e-15,4.97637505 L-7.10542736e-15,19.6127722 C0.000322706741,19.6249588 -7.10542736e-15,19.6371558 -7.10542736e-15,19.6493632 C-7.10542736e-15,22.3775306 16.117749,24.5891473 36,24.5891473 C55.882251,24.5891473 72,22.3775306 72,19.6493632 C72,19.6371558 71.9996773,19.6249588 71.999033,19.6127722 Z" id="Combined-Shape" fill="#201D1D"></path>
+                        <ellipse id="top-copy" fill="#FFFFFF" cx="36" cy="4.93978405" rx="36" ry="4.93978405"></ellipse>
+                        <ellipse id="top" fill-opacity="0.5" fill="#201D1D" cx="36" cy="4.93978405" rx="36" ry="4.93978405"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

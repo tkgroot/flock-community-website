@@ -1,0 +1,39 @@
+/// showcase
+.showcase-wrapper
+  background-color: $gray-200
+  justify-content: center
+  padding-bottom: $showcase-wrapper-padding-y
+  padding-top: $showcase-wrapper-padding-y
+
+.showcase
+  align-self: baseline
+  display: block
+  background-color: $white
+  max-width: map-get($grid-breakpoints, md)
+
+// header
+.showcase-header
+  border-bottom: $border-width solid $gray-200
+  background-color: transparentize($yellow, .2)
+  position: relative
+  padding-top: $arrow-box-size + $showcase-padding
+  padding-left: $showcase-padding
+  padding-right: $showcase-padding
+
+// body
+.showcase-content
+  +flexbox(column)
+  padding: 0 $spacer
+  margin-top: $showcase-margin
+
+.showcase-paragraph
+  +media-breakpoint-up(md)
+    width: 75%
+  align-self: center
+  text-align: justify
+  width: 100%
+
+// footer
+.showcase-footer
+  border-top: $border-width solid $gray-200
+  padding: $showcase-footer-padding

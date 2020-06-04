@@ -1,0 +1,21 @@
+---
+version: '2'
+
+services:
+  website:
+    container_name: 'flock_website'
+    build:
+      context: '.'
+      dockerfile: 'Dockerfile'
+    expose:
+      - '9001'
+      - '8000'
+    ports:
+      - '9001:9001'
+      - '8000:8000'
+    volumes:
+      - '.:/app'
+      - 'node_modules:/app/node_modules'
+
+volumes:
+  node_modules:

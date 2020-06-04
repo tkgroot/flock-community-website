@@ -1,0 +1,11 @@
+node_modules/
+.editorconfig
+.gcloudignore
+.gitignore
+.nvmrc
+.travis.yml
+app.yaml
+docker-compose.yaml
+Dockerfile
+README.md
+secrets.tar.enc

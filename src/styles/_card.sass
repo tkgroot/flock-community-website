@@ -1,0 +1,42 @@
+/// card extends from bootstrap cards
+
+/// showcase card
+// showcase-cards contain a wrapping link
+.showcase-card
+  +media-breakpoint-up(md)
+    height: 100%  // when wrapped in a Link in a card-deck it´s the same height
+  background-color: $gray-100
+  box-shadow: 0 0.9px 1.5px rgba(0, 0, 0, 0.03), 0 3.1px 5.5px rgba(0, 0, 0, 0.08), 0 14px 25px rgba(0, 0, 0, 0.12)
+  min-width: 0
+  position: relative
+  overflow: hidden
+  text-decoration: none
+  width: $card-showcase-width
+
+  &:hover
+    .marked-link
+      background-size: 100% 100%
+
+  & figure
+    margin: 0
+
+  // & > div
+  //   +flexbox(column, nowrap)
+  //   height: 100%
+
+  & .showcase-img
+    object-fit: cover
+    width: 100%
+
+.showcase-card-content
+  padding: 0.5rem 1rem
+
+.showcase-label,
+.showcase-title
+  color: $brown
+  font-weight: 700
+
+.showcase-title
+  line-height: 1.3
+  margin-top: 1.5rem
+  margin-bottom: 1rem

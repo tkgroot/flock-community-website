@@ -1,0 +1,15 @@
+/// icons
+.icon-link-group
+  +flexbox(row, nowrap)
+
+  & > .icon-link-group-item
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+
+.icon-link-group-item
+  margin: 5px
+
+  & img
+    height: $icon-height

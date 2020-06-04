@@ -1,0 +1,42 @@
+/// Author
+
+.author-info
+  display: grid
+  grid-gap: $font-size-base
+  grid-template-columns: $author-image-size 1fr
+
+  &.author-info-sm
+    grid-template-columns: $author-image-size-sm 1fr
+
+  &.author-info-lg
+    grid-template-columns: $author-image-size-lg 1fr
+
+  & > figure
+    overflow: hidden
+
+    & > img
+      object-fit: cover
+      width: 100%
+
+  & .author-content-start
+    align-self: flex-start
+  & .author-content-center
+    align-self: center
+  & .author-content-end
+    align-self: flex-end
+
+
+.author-icon
+  background-color: $yellow
+  border-radius: 50%
+  height: $author-image-size
+  width: $author-image-size
+
+  &.author-icon-sm
+    height: $author-image-size-sm
+    width: $author-image-size-sm
+
+  &.author-icon-lg
+    height: $author-image-size-lg
+    width: $author-image-size-lg
+
