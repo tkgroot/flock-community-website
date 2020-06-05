@@ -53,14 +53,14 @@ const IndexPage = () => (
             ))}
           </div>
         </div>
-        <div className="row box-height bg-blue-light">
+        <div className="row box-height bg-blue-light p-3">
           <BoxItem
             title={contentFlockCommunity.rows[0].title}
             imgComp={<img src={CalendarFlockDayIcon} alt={contentFlockCommunity.rows[0].img.alt} />}
             paragraph={contentFlockCommunity.rows[0].paragraph}
           />
         </div>
-        <div className="row box-height">
+        <div className="row box-height p-3">
           <BoxItem
             boxReverse
             title={contentFlockCommunity.rows[1].title}
@@ -68,7 +68,7 @@ const IndexPage = () => (
             paragraph={contentFlockCommunity.rows[1].paragraph}
           />
         </div>
-        <div className="row box-height bg-blue-light">
+        <div className="row box-height bg-blue-light p-3">
           <BoxItem
             title={contentFlockCommunity.rows[2].title}
             imgComp={<img src={PresentationIcon} alt={contentFlockCommunity.rows[2].img.alt} />}
