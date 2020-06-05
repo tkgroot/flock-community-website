@@ -1,0 +1,32 @@
+/// pagination
+.pagination
+  +flexbox(row, wrap)
+  justify-content: space-between
+  width: 100%
+
+  .selector
+    width: 48%
+
+    & a
+      color: $brown
+      cursor: pointer
+      text-decoration: none
+
+      p
+        font-weight: 300
+        margin-top: 0
+
+
+      span
+        align-items: center
+        display: inline-flex
+        font-size: 1.25rem
+        font-weight: 600
+
+        & .pagination-left
+        margin-left: -1.5rem
+        margin-right: -1.5rem
+
+        img
+          margin-left: .5rem
+          margin-right: .5rem

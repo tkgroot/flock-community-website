@@ -1,0 +1,113 @@
+/// Navbar
+.navbar
+  background-color: white
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  left: 0
+  padding: 0.5rem 1rem
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 1030
+
+
+.navbar .navbar-toggler
+  background-color: transparent
+  border: 0
+  cursor: pointer
+
+
+.navbar .navbar-toggler-icon
+  background-image: url('images/icons/menu/icon-ham.svg')  // relative path from styles.scss
+  background-size: 100% 100%
+  content: ""
+  display: inline-block
+  height: 1.5rem
+  position: relative
+  width: 1.5rem
+  vertical-align: middle
+  z-index: -1
+
+
+.nav-menu
+  background-color: white
+  display: flex
+  height: 100vh
+  margin-left: -1rem
+  margin-right: -1rem
+  width: 110%
+
+
+.nav-menu:not(.show)
+  display: none
+
+
+.navbar-brand
+  display: inline-block
+  padding-top: 0.3125rem
+  padding-bottom: 0.3125rem
+  margin-right: 1rem
+  white-space: wrap
+
+
+.flock-simple-logo
+  height: 40px
+
+
+.flock-community-logo
+  display: none
+  height: 50px
+
+
+.nav-menu .navbar-collapse
+  display: flex
+  list-style: none
+  flex-flow: column nowrap
+  flex: 1 1 100%
+  margin: auto
+  padding: 0
+  text-align: center
+
+
+.nav-menu li
+  margin: 1rem
+  font-size: 24px
+
+
+.nav-menu li a:hover
+  text-decoration: underline
+
+
+.nav-menu li a
+  color: inherit
+  cursor: pointer
+  text-decoration: none
+
+@media screen and (min-width: 600px)
+  .flock-community-logo
+    display: inherit
+
+  .flock-simple-logo
+    display: none
+
+
+
+@media screen and (min-width: 992px)
+  .navbar-toggler
+    display: none
+
+
+  .nav-menu
+    display: flex !important
+    flex-flow: row nowrap
+    height: inherit
+    margin-left: 0
+    margin-right: 0
+    width: inherit
+
+
+  .nav-menu .navbar-collapse
+    flex-flow: row nowrap
+
+

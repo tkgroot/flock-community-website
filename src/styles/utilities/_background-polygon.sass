@@ -1,0 +1,8 @@
+/// background polygon
+
+$polygon-size: 5rem
+
+.bg-polygon
+  clip-path: polygon(100% $polygon-size, 100% 100%, 0% calc(100% - #{$polygon-size}), 0% 0%)
+  padding: $polygon-size 1rem
+  width: 100%
