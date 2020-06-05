@@ -31,5 +31,6 @@
       order: 1
 
 .box-height
-  height: $box-height
-  max-height: map-get($grid-breakpoints, md)
+  +media-breakpoint-up(md)
+    height: $box-height
+    max-height: map-get($grid-breakpoints, md)
