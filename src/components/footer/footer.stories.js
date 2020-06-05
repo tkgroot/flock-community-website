@@ -1,6 +1,6 @@
 import React from "react"
 import {action} from "@storybook/addon-actions"
-import {Footer} from "./index"
+import {Footer, NavGroup} from "./index"
 
 export default {
   title: "Components | Footer",
@@ -11,38 +11,11 @@ export default {
   excludeStories: /.*Data$/,
 }
 
-export const FooterLinksData = [
-  {
-    caption: "Community",
-    listItems: [
-      ["Flock days", "#"],
-      ["Join", "#"],
-    ],
-  },
-  {
-    caption: "About",
-    listItems: [
-      ["Showcase", "#"],
-      ["Onze Developers", "#"],
-      ["Jobs", "#"],
-    ],
-  },
-  {
-    caption: "Contact",
-    listItems: [
-      ["Flock Software Engineering B.V.", ""],
-      ["+31 (0)6 10 03 99 82", ""],
-      ["Oudegracht aan de Werf 62", ""],
-      ["3511 AC Utrecht", ""],
-    ],
-  },
-]
-
 /**
  * Use this at the end of the website
  */
 export const Default = () => {
-  return <Footer navItems={FooterLinksData} />
+  return <Footer>{NavGroup()}</Footer>
 }
 
 Default.story = {

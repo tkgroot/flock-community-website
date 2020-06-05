@@ -1,1 +1,1 @@
-export {Footer} from "./footer.component"
+export {Footer, NavGroup} from "./footer.component"

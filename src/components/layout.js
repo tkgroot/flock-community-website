@@ -7,12 +7,13 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import {useStaticQuery, graphql} from "gatsby"
 
 import Header from "./header"
 import {Footer} from "./footer/index.js"
+import {GatsbyNavGroup} from "./footer/navItems.component.js"
 
-const Layout = ({ children }) => {
+const Layout = ({children}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -29,7 +30,7 @@ const Layout = ({ children }) => {
       <div>
         <main className="h-100">{children}</main>
       </div>
-      <Footer />
+      <Footer>{GatsbyNavGroup()}</Footer>
     </React.Fragment>
   )
 }
