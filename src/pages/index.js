@@ -89,7 +89,7 @@ const IndexPage = () => (
                 title={contentShowcaseCards[0].title}
                 img={GoogleHomeImg}
                 label={
-                  <Author name={contentShowcaseCards[0].author.name} minimal img={UserFotoJerre} />
+                  <Author name={contentShowcaseCards[0].author.name} minimal img={UserFotoVincent} />
                 }
               />
             </Link>
@@ -101,7 +101,7 @@ const IndexPage = () => (
                   <Author
                     name={contentShowcaseCards[1].author.name}
                     minimal
-                    img={UserFotoVincent}
+                    img={UserFotoJerre}
                   />
                 }
               />

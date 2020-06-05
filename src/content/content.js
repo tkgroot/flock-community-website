@@ -4,16 +4,16 @@
  * Flock Content for the Hero components
  */
 export const contentHeroLanding = {
-  headline: ["Hallo.", "Wij zijn Flock.", "Een nieuwe soort werkgever."],
+  headline: ["Hallo.", "Wij zijn Flock.", "Een nieuw soort werkgever."],
   label: `Welkom bij de mooiste software engineering community van Nederland.`,
-  paragraph: `Een werkgever die als een echte community is voor de software engineers die er werken. Eentje waar iedereen de drive heeft om zichzelf te ontwikkelen en waar we iedere dag een stapje beter worden, samen met onze klanten.`,
+  paragraph: `Een werkgever als echte community voor de software engineers die er werken. Waar iedereen de drive heeft om zichzelf te ontwikkelen. Waar we iedere dag een stapje beter worden. Samen met onze klanten.`,
   body: "Ontdekken hoe we dat doen? Lees snel verder.",
 }
 
 export const contentHeroFlockCommunity = {
   headline: "De Flock Community",
   label: `De Wereld samen inspireren`,
-  paragraph: `Je word omringd met mensen die het maximale uit hun IT-carrière willen halen en stimuleren we kennisdeling. <b>Durven, inspireren en samen beter worden</b>, dat is waar het volgens ons om gaat.`,
+  paragraph: `Je wordt omringd met mensen die het maximale uit hun IT-carrière willen halen en stimuleren we kennisdeling. <b>Durven, inspireren en samen beter worden</b>, dat is waar het volgens ons om gaat.`,
 }
 
 /**
@@ -23,7 +23,7 @@ export const contentFlockCommunity = {
   introParagraphs: [
     `Software engineers van Flock werken aan innovatieve en uitdagende opdrachten waarbij ze zichzelf verbeteren en elkaar inspireren. Ze maken onderdeel uit van de Flock community, die fungeert als thuisbasis. Daarnaast is het een groep van gelijkgestemden die net als jij alles uit hun carrière willen halen.`,
     `Ga je werken bij Flock? Dan zoeken wij de opdracht die het beste bij je past. Eentje waar jij beter van wordt. Want samen beter worden, dat is het belangrijkste doel van onze community. Alle beslissingen die we nemen dragen daaraan bij.`,
-    `Bij Flock verwachten we natuurlijk ook iets van onze engineers. Een community is immers zo sterk als haar leden. Pas jij bij Flock? Dan ben je zowel technisch als communicatief sterk. En het belangrijkste? Je hebt altijd de drive om jezelf te ontwikkelen. Op die manier maken we onze community samen iedere dag een beetje mooier.`,
+    `Bij Flock verwachten we natuurlijk ook iets van onze engineers. Een community is immers zo sterk als haar leden. Pas jij bij Flock? Dan ben je zowel technisch als communicatief sterk. Het belangrijkste? Je hebt altijd de drive om jezelf te ontwikkelen. Op die manier maken we onze community samen iedere dag een beetje mooier.`,
   ],
   rows: [
     {
@@ -32,7 +32,7 @@ export const contentFlockCommunity = {
         src: "CalendarFlockDaysIcon",
         alt: "calendar with flock days marked every two weeks",
       },
-      paragraph: `We zijn een warm thuis voor onze community van software engineers. Daarom werken we waar mogelijk iedere twee weken een dag samen op kantoor aan innovatieve projecten voor onze eigen ontwikkeling. En natuurlijk is de Flock Day ook een perfect moment om van elkaar te leren en elkaar te inspireren.`,
+      paragraph: `We zijn een warm thuis voor onze community van software engineers. Daarom werken we waar mogelijk iedere twee weken een dag samen op kantoor aan innovatieve projecten voor onze eigen ontwikkeling. Natuurlijk is de Flock Day ook een perfect moment om van elkaar te leren en elkaar te inspireren.`,
     },
     {
       title: "2. Social Events",
@@ -55,14 +55,14 @@ export const contentFlockCommunity = {
  */
 export const contentShowcaseCards = [
   {
-    title: "Hey Google, I would like to buy a book at Bol.com",
+    title: "Hey Google, I would like to buy a book at bol.com",
     img: {alt: "google home on a table"},
-    author: {name: "Jerre van Veluw"},
+    author: {name: "Vincent de Bruijn"},
   },
   {
     title: "Server Side Rendering: Better performance. Faster loading. Great for SEO.",
     img: {alt: "stock photo"},
-    author: {name: "Vincent"},
+    author: {name: "Jerre van Veluw"},
   },
 ]
 
