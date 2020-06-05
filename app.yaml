@@ -4,11 +4,11 @@ threadsafe: true
 
 handlers:
 - url: /
-  static_files: dist/index.html
-  upload: dist/index.html
+  static_files: public/index.html
+  upload: public/index.html
   secure: always
 
 - url: /(.*)
-  static_files: dist/\1
-  upload: dist/(.*)
+  static_files: public/\1
+  upload: public/(.*)
   secure: always  
