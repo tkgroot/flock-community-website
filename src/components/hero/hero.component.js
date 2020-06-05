@@ -1,16 +1,18 @@
 import React from "react"
+import PropTypes from "prop-types"
 import {contentHeroLanding, contentHeroFlockCommunity} from "../../content"
 
 /**
  *
  */
-export function HeroLanding() {
+export function HeroLanding(props) {
+  const {showLabel} = props
   const {label, headline, paragraph, body} = contentHeroLanding
 
   return (
     <div className="hero">
       <div>
-        <span className="label marked-text">{label}</span>
+        {showLabel ? <span className="label marked-text">{label}</span> : null }
         <h1 className="hero-headline display-1">
           {headline.map(item => (
             <span>
@@ -24,6 +26,13 @@ export function HeroLanding() {
       </div>
     </div>
   )
+}
+HeroLanding.propTypes = {
+  showLabel: PropTypes.bool,
+}
+
+HeroLanding.defaultProps = {
+  showLabel: false,
 }
 
 /**

@@ -13,7 +13,7 @@ import FlockTeam from "../images/community/group.jpg"
 import UserFotoJerre from "../images/community/jerre-hs.jpg"
 import UserFotoVincent from "../images/community/vincent-hs.jpg"
 
-import {contentFlockCommunity, contentShowcaseCards} from "../content"
+import {contentFlockCommunity, contentHeroLanding, contentShowcaseCards} from "../content"
 import {HeroLanding, HeroFlockCommunity} from "../components/hero"
 import {BoxItem} from "../components/box"
 import {ShowcaseCard} from "../components/cards"
@@ -28,6 +28,12 @@ const IndexPage = () => (
           <img src={FlockTeam} alt="het enthousiaste Flock team buiten het kantoor" />
         </div>
       </div>
+      <div className="row bg-yellow bg-polygon-reverse">
+        <div className="container">
+          <p className="mt-3 h4">{contentHeroLanding.label}</p>
+        </div>
+      </div>
+
       <div className="container">
         <div className="row hero-full-page">
           <HeroLanding />
@@ -82,14 +88,22 @@ const IndexPage = () => (
               <ShowcaseCard
                 title={contentShowcaseCards[0].title}
                 img={GoogleHomeImg}
-                label={<Author name={contentShowcaseCards[0].author.name} minimal img={UserFotoJerre} />}
+                label={
+                  <Author name={contentShowcaseCards[0].author.name} minimal img={UserFotoJerre} />
+                }
               />
             </Link>
             <Link to="/showcases/server-side-rendering/">
               <ShowcaseCard
                 title={contentShowcaseCards[1].title}
                 img={ServerSideRenderImg}
-                label={<Author name={contentShowcaseCards[1].author.name} minimal img={UserFotoVincent} />}
+                label={
+                  <Author
+                    name={contentShowcaseCards[1].author.name}
+                    minimal
+                    img={UserFotoVincent}
+                  />
+                }
               />
             </Link>
           </div>
