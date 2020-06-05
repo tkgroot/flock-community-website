@@ -1,4 +1,5 @@
 import React from "react"
+import {boolean, withKnobs} from "@storybook/addon-knobs"
 import {HeroLanding, HeroFlockCommunity} from "./hero.component"
 import {containerFluidWrapper, containerFluidRowWrapper} from "../../utils"
 
@@ -11,6 +12,11 @@ Hero.story = {
   name: "Landing",
   component: HeroLanding,
   // decorators: [storyFn => containerFluidRowWrapper(storyFn)],
+}
+export const HeroWithLabel = () => <HeroLanding showLabel />
+HeroWithLabel.story = {
+  name: "Hero with Label",
+  component: HeroLanding,
 }
 
 export const HeroBanner = () => (
