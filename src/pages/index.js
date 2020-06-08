@@ -2,7 +2,6 @@ import React from "react"
 import {Link} from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import CalendarFlockDayIcon from "../images/icons/calendar/calendar_w-flockdays@2x.png"
 import SocialEventsIcon from "../images/icons/social-events/social-events.png"
@@ -30,7 +29,9 @@ const IndexPage = () => (
       </div>
       <div className="row bg-yellow bg-polygon-reverse">
         <div className="container">
-          <p className="mt-3 h4">{contentHeroLanding.label}</p>
+          <p className="mt-3 h4">
+            <i>{contentHeroLanding.label}</i>
+          </p>
         </div>
       </div>
 
@@ -53,14 +54,14 @@ const IndexPage = () => (
             ))}
           </div>
         </div>
-        <div className="row box-height bg-blue-light p-3">
+        <div className="row box-height bg-blue-light py-5">
           <BoxItem
             title={contentFlockCommunity.rows[0].title}
             imgComp={<img src={CalendarFlockDayIcon} alt={contentFlockCommunity.rows[0].img.alt} />}
             paragraph={contentFlockCommunity.rows[0].paragraph}
           />
         </div>
-        <div className="row box-height p-3">
+        <div className="row box-height py-5">
           <BoxItem
             boxReverse
             title={contentFlockCommunity.rows[1].title}
@@ -68,7 +69,7 @@ const IndexPage = () => (
             paragraph={contentFlockCommunity.rows[1].paragraph}
           />
         </div>
-        <div className="row box-height bg-blue-light p-3">
+        <div className="row box-height bg-blue-light py-5">
           <BoxItem
             title={contentFlockCommunity.rows[2].title}
             imgComp={<img src={PresentationIcon} alt={contentFlockCommunity.rows[2].img.alt} />}
@@ -89,7 +90,11 @@ const IndexPage = () => (
                 title={contentShowcaseCards[0].title}
                 img={GoogleHomeImg}
                 label={
-                  <Author name={contentShowcaseCards[0].author.name} minimal img={UserFotoVincent} />
+                  <Author
+                    name={contentShowcaseCards[0].author.name}
+                    minimal
+                    img={UserFotoVincent}
+                  />
                 }
               />
             </Link>
@@ -98,11 +103,7 @@ const IndexPage = () => (
                 title={contentShowcaseCards[1].title}
                 img={ServerSideRenderImg}
                 label={
-                  <Author
-                    name={contentShowcaseCards[1].author.name}
-                    minimal
-                    img={UserFotoJerre}
-                  />
+                  <Author name={contentShowcaseCards[1].author.name} minimal img={UserFotoJerre} />
                 }
               />
             </Link>
