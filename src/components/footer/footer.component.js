@@ -40,8 +40,8 @@ export function Footer(props) {
             <ul>
               <li>Flock Software Engineering B.V.</li>
               <li>+31(0)6 10 03 99 82</li>
-              <li>Oudegracht aan de Werf 62</li>
-              <li>3511 AC Utrecht</li>
+              <li>Jansdam 2a</li>
+              <li>3512 HB Utrecht</li>
             </ul>
           </div>
         </div>
