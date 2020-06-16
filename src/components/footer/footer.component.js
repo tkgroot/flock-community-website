@@ -59,7 +59,7 @@ export function Footer(props) {
               </a>
             </div>
             <div className="icon-link-group-item">
-              <a href="https://linkedin.com/flock.  /">
+              <a href="https://linkedin.com/flock.">
                 <img src={LinkedInLogo} alt="Github logo" />
               </a>
             </div>
