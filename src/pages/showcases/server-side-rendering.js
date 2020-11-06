@@ -4,7 +4,7 @@ import {Link} from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import ArrowLeftLight from "../../images/icons/arrows/arrow-left-light.svg"
-import AuthorImg from "../../images/community/vincent-hs.jpg"
+import AuthorPhoto from "../../images/community/jerre-hs.jpg"
 
 import {contentShowcases} from "../../content"
 import {ShowcaseBody, ShowcaseHeader} from "../../components/showcase"
@@ -28,7 +28,7 @@ const ShowcaseServerSideRendering = () => (
           />
           <ShowcaseBody content={content.content} />
           <footer className="showcase-footer">
-            <Author name={"Vincent"} description={""} minimal img={AuthorImg} />
+            <Author name={content.author.name} description={""} minimal img={AuthorPhoto} />
           </footer>
         </article>
       </div>

@@ -74,6 +74,7 @@ export const contentShowcases = [
     seoTitle: "Google Assistant",
     title: "Hey Google, I would like to buy a book at Bol.com",
     label: "Bol.com - Google Assistant",
+    author: {name: "Vincent de Bruijn"},
     content: [
       `Bij Flock. zijn we dagelijks bezig met mooie software bouwen, elkaar inspireren en samen
         beter worden. In samenwerking met Bol.com kwamen deze waarden perfect bij elkaar en
@@ -95,6 +96,7 @@ export const contentShowcases = [
     seoTitle: "SSR with React",
     title: "Server Side Rendering: Better performance. Faster loading. Great for SEO.",
     label: "Bol.com - Server Side Rendering with React",
+    author: {name: "Jerre van Veluw"},
     content: [
       `We gebruiken graag cutting-edge technologieën. Dit levert waarde op voor onze klanten,
       maar het is ook gewoon tof om mee te werken. In een Proof of Concept voor Bol.com realiseerden
@@ -121,7 +123,7 @@ export const contentFooter = {
   nav: [
     {
       title: "About",
-      items: ["Showcases", "Onze Developers"]
+      items: ["Showcases", "Onze Developers"],
     },
     {
       title: "Contact",

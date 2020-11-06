@@ -1,12 +1,18 @@
 /// banner
 .banner-img
-  width: 100%
   overflow: hidden
+  width: 100%
+
   & > img
-    +media-breakpoint-up(lg)
-      width: 100%
-      margin-left: 0
-      object-fit: cover
-    width: 150%
-    margin-left: -25%
     object-fit: cover
+    object-position: center
+    width: 116%
+    height: 200px
+    margin-left: -32px
+    +media-breakpoint-up(sm)
+      margin-left: -72px
+      width: 120%
+    +media-breakpoint-up(lg)
+      height: 20vw
+      margin-left: 0
+      width: 100%
