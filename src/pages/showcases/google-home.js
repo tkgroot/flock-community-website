@@ -3,7 +3,7 @@ import {Link} from "gatsby"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import AuthorFoto from "../../images/community/jerre-hs.jpg"
+import AuthorPhoto from "../../images/community/vincent-hs.jpg"
 import ArrowLeftLight from "../../images/icons/arrows/arrow-left-light.svg"
 
 import {ShowcaseBody, ShowcaseHeader} from "../../components/showcase"
@@ -28,7 +28,7 @@ const ShowcaseGoogleHome = () => (
           />
           <ShowcaseBody content={content.content} />
           <footer className="showcase-footer">
-            <Author name={"Jerre van Veluw"} description={""} img={AuthorFoto} minimal />
+            <Author name={content.author.name} img={AuthorPhoto} minimal />
           </footer>
         </article>
       </div>
