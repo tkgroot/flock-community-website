@@ -1,3 +1,13 @@
 {
-  "extends": ["airbnb", "airbnb/hooks", "plugin:prettier/recommended"]
+  "extends": ["eslint:recommended", "airbnb", "airbnb/hooks", "prettier", "prettier/react"],
+  "rules": {
+    "import/no-default-export": 2,
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ]
+  }
 }
