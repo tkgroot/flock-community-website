@@ -25,13 +25,13 @@ const Layout = ({children}) => {
   `)
 
   return (
-    <React.Fragment>
+    <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main className="h-100">{children}</main>
       </div>
       <Footer>{GatsbyNavGroup()}</Footer>
-    </React.Fragment>
+    </>
   )
 }
 
