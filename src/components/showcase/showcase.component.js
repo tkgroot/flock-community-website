@@ -24,16 +24,7 @@ export function ShowcaseBody(props) {
   const {content} = props
 
   return (
-    <div className="showcase-content">
-      {content.map((paragraph, key) => (
-        <p
-          className={key === 0 ? "showcase-paragraph first-letter" : "showcase-paragraph"}
-          key={key}
-        >
-          {paragraph}
-        </p>
-      ))}
-    </div>
+      <div className="showcase-content" dangerouslySetInnerHTML={{__html:content}} />
   )
 }
 

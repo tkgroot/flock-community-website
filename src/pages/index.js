@@ -1,13 +1,12 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from "react"
-import {Link} from "gatsby"
+import {Link, graphql} from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CalendarFlockDayIcon from "../images/icons/calendar/calendar_w-flockdays@2x.png"
 import SocialEventsIcon from "../images/icons/social-events/social-events.png"
 import PresentationIcon from "../images/icons/presentation/presentation_w-wireframe@2x.png"
-import GoogleHomeImg from "../images/showcases/google-home.jpeg"
-import ServerSideRenderImg from "../images/showcases/stock.jpg"
 import FlockTeam from "../images/community/group.jpg"
 import UserFotoJerre from "../images/community/jerre-hs.jpg"
 import UserFotoVincent from "../images/community/vincent-hs.jpg"
@@ -17,8 +16,32 @@ import {HeroLanding, HeroFlockCommunity} from "../components/hero"
 import {BoxItem} from "../components/box"
 import {ShowcaseCard} from "../components/cards"
 import {Author} from "../components/author"
+import { peoples } from "../content/community"
 
-const IndexPage = () => (
+export const query = graphql`
+  {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            author
+            coverImage
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`
+
+const IndexPage = ({ data }) => {
+  const showcases = data.allMarkdownRemark.edges
+
+  return (
   <Layout>
     <SEO title="Home" />
     <div className="container-fluid">
@@ -77,7 +100,7 @@ const IndexPage = () => (
           />
         </div>
       </section>
-      <section className="">
+      <section>
         <div className="row">
           <header className="col-lg-2">
             <a name="showcases">
@@ -85,33 +108,31 @@ const IndexPage = () => (
             </a>
           </header>
           <div className="card-deck mx-auto">
-            <Link to="/showcases/google-home/">
+            {showcases.map(({node}) => {
+              const {fields, frontmatter} = node
+              const {title, author, coverImage} = frontmatter
+              const {firstname, lastname, image } = peoples.filter(p => p.firstname === author)[0]
+
+              return (
+            <Link to={fields.slug}>
               <ShowcaseCard
-                title={contentShowcaseCards[0].title}
-                img={GoogleHomeImg}
+                title={title}
+                img={require(`../images/showcases/${coverImage}`)}
                 label={
                   <Author
-                    name={contentShowcaseCards[0].author.name}
+                    name={`${firstname} ${lastname}`}
                     minimal
-                    img={UserFotoVincent}
+                    img={require(`../images/community/${image}`)}
                   />
                 }
               />
             </Link>
-            <Link to="/showcases/server-side-rendering/">
-              <ShowcaseCard
-                title={contentShowcaseCards[1].title}
-                img={ServerSideRenderImg}
-                label={
-                  <Author name={contentShowcaseCards[1].author.name} minimal img={UserFotoJerre} />
-                }
-              />
-            </Link>
+            )})}
           </div>
         </div>
       </section>
     </div>
   </Layout>
-)
+)}
 
 export default IndexPage

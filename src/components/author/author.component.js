@@ -1,8 +1,9 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from "react"
 import PropTypes from "prop-types"
 
 export function Author(props) {
-  const {align, minimal, name, description, img} = props
+  const { align, minimal, name, description, img } = props
 
   return (
     <div className={minimal ? "author-info author-info-sm" : "author-info"}>
