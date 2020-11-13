@@ -3,6 +3,7 @@ title: "Server Side Rendering: Better performance. Faster loading. Great for SEO
 label: "Bol.com - Server Side Rendering with React"
 author: "Jerre"
 coverImage: "john-schnobrich-unsplash.jpg"
+coverCaption: Photo by <a href="https://unsplash.com/@johnschno">John Schnobrich</a> on <a href="https://unsplash.com">Unsplash</a>
 ---
 
 We gebruiken graag cutting-edge technologieën. Dit levert waarde op voor onze klanten,
