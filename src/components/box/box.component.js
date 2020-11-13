@@ -7,7 +7,6 @@ import PropTypes from "prop-types"
  */
 export function BoxItem(props) {
   const {boxReverse, children, title, imgComp, paragraph} = props
-  console.log(boxReverse)
 
   return (
     <React.Fragment>
