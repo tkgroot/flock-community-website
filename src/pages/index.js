@@ -11,7 +11,7 @@ import FlockTeam from "../images/community/group.jpg"
 import UserFotoJerre from "../images/community/jerre-hs.jpg"
 import UserFotoVincent from "../images/community/vincent-hs.jpg"
 
-import {contentFlockCommunity, contentHeroLanding, contentShowcaseCards} from "../content"
+import {contentFlockCommunity, contentHeroLanding} from "../content"
 import {HeroLanding, HeroFlockCommunity} from "../components/hero"
 import {BoxItem} from "../components/box"
 import {ShowcaseCard} from "../components/cards"
