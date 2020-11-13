@@ -28,6 +28,7 @@ export const query = graphql`
             title
             author
             coverImage
+            coverCaption
           }
           fields {
             slug
@@ -109,8 +110,9 @@ const IndexPage = ({ data }) => {
           </header>
           <div className="card-deck mx-auto">
             {showcases.map(({node}) => {
+              console.log(node);
               const {fields, frontmatter} = node
-              const {title, author, coverImage} = frontmatter
+              const {title, author, coverImage, coverCaption} = frontmatter
               const {firstname, lastname, image } = peoples.filter(p => p.firstname === author)[0]
 
               return (
@@ -118,6 +120,7 @@ const IndexPage = ({ data }) => {
               <ShowcaseCard
                 title={title}
                 img={require(`../images/showcases/${coverImage}`)}
+                figcaption={coverCaption}
                 label={
                   <Author
                     name={`${firstname} ${lastname}`}
