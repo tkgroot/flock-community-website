@@ -27,5 +27,5 @@ export const Default = () => {
 }
 Default.story = {
   name: "Box Item",
-  decorators: [storyFn => containerFluidWrapperWrapper(storyFn)],
+  decorators: [storyFn => containerFluidWrapper(storyFn)],
 }
