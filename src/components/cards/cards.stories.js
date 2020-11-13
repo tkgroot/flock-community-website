@@ -2,6 +2,7 @@ import React from "react"
 import {select, text, withKnobs} from "@storybook/addon-knobs"
 
 import GoogleHome from "../../images/showcases/google-home.jpeg"
+import Foto from "../../images/showcases/john-schnobrich-unsplash.jpg"
 import AuthorFoto from "../../images/community/jerre-hs.jpg"
 import IconMonitor from "../../images/icon-monitor-code.svg"
 import IconBackend from "../../images/icon-backend.svg"
@@ -120,24 +121,28 @@ export const ShowcaseCardWithAuthor = () => {
 export const ShowcaseCardGrid = () => {
   const cards = [
     {
+      img: GoogleHome,
       name: "Denholm Reynholm",
       title: "Ad duis duis ipsum aute consectetur voluptate.",
       label: "Anim ex in officia cillum sint tempor commodo esse esse enim magna.",
     },
     {
+      img: Foto,
       name: "Morris Moss",
       title: "Officia officia cupidatat eiusmod veniam adipisicing.",
       label: "Ut sint est mollit et dolore Lorem fugiat eiusmod labore consequat sit exercitation.",
+      figcaption: `Photo by <a href="https://unsplash.com/@johnschno">John Schnobrich</a> on <a href="https://unsplash.com">Unsplash</a>`
     },
   ]
   return (
     <div className="card-deck">
       {cards.map((card, key) => (
         <ShowcaseCard
-          img={GoogleHome}
+          img={card.img}
           alt="a google home on a table"
           title={card.title}
           label={<Author name={card.name} minimal />}
+          figcaption={card.figcaption}
         />
       ))}
     </div>
