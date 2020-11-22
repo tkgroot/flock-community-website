@@ -5,7 +5,7 @@ import ArrowRightLight from "../../images/icons/arrows/arrow-right-light.svg"
 import ArrowLeftLight from "../../images/icons/arrows/arrow-left-light.svg"
 
 export function ShowcaseCard(props) {
-  const {img, alt, title, label, arrow} = props
+  const {img, alt, title, label, arrow, figcaption} = props
 
   return (
     <div className="card showcase-card">
@@ -21,6 +21,9 @@ export function ShowcaseCard(props) {
         )}
         <figure>
           <img className="showcase-img" src={img} alt={alt} />
+          {figcaption && <figcaption>
+            <span dangerouslySetInnerHTML={{__html: figcaption}} />
+          </figcaption>}
         </figure>
         <div className="showcase-card-content">
           <span className="showcase-label">{label}</span>
@@ -36,6 +39,7 @@ export function ShowcaseCard(props) {
 ShowcaseCard.propTypes = {
   img: PropTypes.element,
   alt: PropTypes.string,
+  figcaption: PropTypes.string,
   title: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   arrow: PropTypes.string,
@@ -43,4 +47,5 @@ ShowcaseCard.propTypes = {
 
 ShowcaseCard.defaultProps = {
   arrow: "right",
+  figcaption: undefined,
 }
