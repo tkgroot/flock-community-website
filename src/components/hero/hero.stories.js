@@ -20,7 +20,7 @@ HeroWithLabel.story = {
 }
 
 export const HeroBanner = () => (
-  <div className="bg-yellow bg-polygon">
+  <div className="bg-yellow bg-polygon hero-flock-community">
     <HeroFlockCommunity />
   </div>
 )
