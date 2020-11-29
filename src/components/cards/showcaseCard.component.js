@@ -5,9 +5,10 @@ import ArrowRightLight from "../../images/icons/arrows/arrow-right-light.svg"
 import ArrowLeftLight from "../../images/icons/arrows/arrow-left-light.svg"
 
 export function ShowcaseCard(props) {
-  const {img, alt, title, label, arrow, figcaption} = props
+  const { img, alt, title, label, arrow, figcaption } = props
 
   return (
+    // eslint-disable-next-line react/jsx-filename-extension
     <div className="card showcase-card">
       <div>
         {arrow === "left" ? (
@@ -21,9 +22,11 @@ export function ShowcaseCard(props) {
         )}
         <figure>
           <img className="showcase-img" src={img} alt={alt} />
-          {figcaption && <figcaption>
-            <span dangerouslySetInnerHTML={{__html: figcaption}} />
-          </figcaption>}
+          {figcaption && (
+            <figcaption>
+              <span dangerouslySetInnerHTML={{ __html: figcaption }} />
+            </figcaption>
+          )}
         </figure>
         <div className="showcase-card-content">
           <span className="showcase-label">{label}</span>

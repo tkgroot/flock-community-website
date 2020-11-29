@@ -8,6 +8,7 @@ import CalendarFlockDayIcon from "../images/icons/calendar/calendar_w-flockdays@
 import SocialEventsIcon from "../images/icons/social-events/social-events.png"
 import PresentationIcon from "../images/icons/presentation/presentation_w-wireframe@2x.png"
 import FlockTeam from "../images/community/group.jpg"
+import FlockLogo from "../images/favicons/flock-icon.png"
 
 import { contentFlockCommunity, contentHeroLanding } from "../content"
 import { HeroLanding, HeroFlockCommunity } from "../components/hero"
@@ -27,6 +28,7 @@ export const query = graphql`
             author
             coverImage
             coverCaption
+            external
           }
           fields {
             slug
@@ -103,21 +105,21 @@ const IndexPage = ({ data }) => {
         </section>
         <section>
           <div className="row">
-            <header className="col-lg-2">
-              <a name="showcases">
+            <header className="col-12">
+              <a href="#showcases" name="showcases">
                 <h2>Onze Showcases</h2>
               </a>
             </header>
-            <div className="card-deck mx-auto">
-              {showcases.map(({ node }) => {
-                const { fields, frontmatter } = node
-                const { title, author, coverImage, coverCaption } = frontmatter
-                const { firstname, lastname, image } = peoples.filter(
-                  p => p.firstname === author,
-                )[0]
+          </div>
+          <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+            {showcases.map(({ node }) => {
+              const { fields, frontmatter } = node
+              const { title, author, coverImage, coverCaption, external } = frontmatter
+              const { firstname, lastname, image } = peoples.filter(p => p.firstname === author)[0]
 
-                return (
-                  <Link to={fields.slug}>
+              return (
+                <div className="col mb-4">
+                  <Link to={external || fields.slug}>
                     <ShowcaseCard
                       title={title}
                       // eslint-disable-next-line import/no-dynamic-require, global-require
@@ -128,14 +130,14 @@ const IndexPage = ({ data }) => {
                           name={`${firstname} ${lastname}`}
                           minimal
                           // eslint-disable-next-line import/no-dynamic-require, global-require
-                          img={require(`../images/community/${image}`)}
+                          img={image ? require(`../images/community/${image}`) : FlockLogo}
                         />
                       }
                     />
                   </Link>
-                )
-              })}
-            </div>
+                </div>
+              )
+            })}
           </div>
         </section>
       </div>
