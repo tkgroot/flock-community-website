@@ -4,7 +4,7 @@ threadsafe: true
 
 handlers:
 
-- url: /(.*\.(gif|png|jpg|jpeg|svg|js|amp|css|json))
+- url: /(.*\.(gif|png|jpg|jpeg|svg|js|amp|css|json|webmanifest))
   static_files: public/\1
   upload: public/(.*)
   secure: always
