@@ -17,7 +17,8 @@
     "clean": "gatsby clean",
     "storybook": "start-storybook --host 0.0.0.0 --port 9001",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy": "gcloud app deploy --project flock-community-website"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
