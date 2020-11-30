@@ -1,9 +1,6 @@
 name: Build and Deploy to GCP
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
   build-deploy:
@@ -36,4 +33,4 @@ jobs:
         run: npm run build
 
       - name: Deploy
-        run: gcloud app deploy
+        run: gcloud app deploy --no-promote
