@@ -45,7 +45,7 @@ function ShowcasesTemplate({ data }) {
             />
             <ShowcaseBody content={html} />
             <footer className="showcase-footer">
-              <Author name={`${firstname} ${lastname}`} img={require(`../images/community/${image}`)} minimal />
+              <Author name={`${firstname} ${lastname}`} img={image ? require(`../images/community/${image}`) : ''} minimal />
             </footer>
           </article>
         </div>
