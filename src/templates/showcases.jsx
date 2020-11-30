@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 import React from "react"
 import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
@@ -11,7 +10,7 @@ import { ShowcaseBody, ShowcaseHeader } from "../components/showcase"
 import { peoples } from "../content/community"
 
 export const query = graphql`
-    query($slug: String!) {
+  query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -26,7 +25,7 @@ export const query = graphql`
 function ShowcasesTemplate({ data }) {
   const { frontmatter, html } = data.markdownRemark
   const { title, label, author } = frontmatter
-  const {firstname, lastname, image} = peoples.filter(p => p.firstname === author)[0]
+  const { firstname, lastname, image } = peoples.filter(p => p.firstname === author)[0]
 
   return (
     <Layout>
@@ -45,7 +44,14 @@ function ShowcasesTemplate({ data }) {
             />
             <ShowcaseBody content={html} />
             <footer className="showcase-footer">
-              <Author name={`${firstname} ${lastname}`} img={image ? require(`../images/community/${image}`) : ''} minimal />
+              <Author
+                name={`${firstname} ${lastname}`}
+                img={
+                  // eslint-disable-next-line global-require, import/no-dynamic-require
+                  image ? require(`../images/community/${image}`) : ""
+                }
+                minimal
+              />
             </footer>
           </article>
         </div>
