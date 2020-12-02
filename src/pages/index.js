@@ -103,7 +103,7 @@ const IndexPage = ({ data }) => {
             />
           </div>
         </section>
-        <section>
+        <section className="container">
           <div className="row">
             <header className="col-12">
               <a href="#showcases" name="showcases">
