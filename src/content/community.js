@@ -18,7 +18,7 @@ export const peoples = [
     image: undefined,
   },
   {
-    firstname: "Casper",
+    firstname: "Kasper",
     lastname: "Peulen",
     image: undefined,
   },
