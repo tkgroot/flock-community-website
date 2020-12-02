@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import CalendarFlockDayIcon from "../images/icons/calendar/calendar_w-flockdays@2x.png"
 import SocialEventsIcon from "../images/icons/social-events/social-events.png"
 import PresentationIcon from "../images/icons/presentation/presentation_w-wireframe@2x.png"
-import FlockTeam from "../images/community/group.jpg"
+import FlockTeam from "../images/community/group_2020-2.jpg"
 import FlockLogo from "../images/favicons/flock-icon.png"
 
 import { contentFlockCommunity, contentHeroLanding } from "../content"
