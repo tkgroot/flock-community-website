@@ -30,7 +30,7 @@ function ShowcasesTemplate({ data }) {
 
   return (
     <Layout>
-      <SEO title={`Showcases | `} />
+      <SEO title={`Blogs | `} />
       <div className="container-fluid h-100">
         <div className="row showcase-wrapper h-100">
           <article className="showcase">
@@ -38,7 +38,7 @@ function ShowcasesTemplate({ data }) {
               title={title}
               label={label}
               link={
-                <Link className="arrow arrow-box positioned-left" to="/#showcases">
+                <Link className="arrow arrow-box positioned-left" to="/#blogs">
                   <img src={ArrowLeftLight} alt="arrow left" />
                 </Link>
               }

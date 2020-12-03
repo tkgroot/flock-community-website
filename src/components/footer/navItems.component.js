@@ -12,8 +12,8 @@ export function GatsbyNavGroup() {
           </Link>
         </li>
         <li>
-          <Link className="footer-link" to="/#showcases">
-            Showcases
+          <Link className="footer-link" to="/#blogs">
+            Blogs
           </Link>
         </li>
       </ul>

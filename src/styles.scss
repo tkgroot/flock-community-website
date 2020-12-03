@@ -28,3 +28,10 @@
 @import "~bootstrap/scss/bootstrap-grid";
 @import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/card";
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
