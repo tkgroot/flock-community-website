@@ -107,7 +107,9 @@ const IndexPage = ({data}) => {
         </section>
         <section className="container">
           <a id="blogs" className="anchor"/>
-          <h2>Blogs</h2>
+          <div className="row">
+            <h2>Blogs</h2>
+          </div>
           <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3">
             {showcases.map(({node}) => {
               const {fields, frontmatter} = node
