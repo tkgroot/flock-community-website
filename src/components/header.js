@@ -28,12 +28,12 @@ const Header = ({siteTitle}) => {
               </Link>
             </li>
             <li>
-              <Link className="navbar-link" data-scroll="" to="/#showcases" onClick={_handleClick}>
-                Showcases
+              <Link className="navbar-link" data-scroll="" to="/#blogs" onClick={_handleClick}>
+                Blogs
               </Link>
             </li>
             <li>
-              <Link className="navbar-link" data-scroll="" to="#contact" onClick={_handleClick}>
+              <Link className="navbar-link" data-scroll="" to="/#contact" onClick={_handleClick}>
                 Contact
               </Link>
             </li>

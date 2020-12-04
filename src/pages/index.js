@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react"
-import { Link, graphql } from "gatsby"
+import {graphql, Link} from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,12 +10,12 @@ import PresentationIcon from "../images/icons/presentation/presentation_w-wirefr
 import FlockTeam from "../images/community/group_2020-2.jpg"
 import FlockLogo from "../images/favicons/flock-icon.png"
 
-import { contentFlockCommunity, contentHeroLanding } from "../content"
-import { HeroLanding, HeroFlockCommunity } from "../components/hero"
-import { BoxItem } from "../components/box"
-import { ShowcaseCard } from "../components/cards"
-import { Author } from "../components/author"
-import { peoples } from "../content/community"
+import {contentFlockCommunity, contentHeroLanding} from "../content"
+import {HeroFlockCommunity, HeroLanding} from "../components/hero"
+import {BoxItem} from "../components/box"
+import {ShowcaseCard} from "../components/cards"
+import {Author} from "../components/author"
+import {peoples} from "../content/community"
 
 export const query = graphql`
   {
@@ -39,16 +39,16 @@ export const query = graphql`
   }
 `
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({data}) => {
   const showcases = data.allMarkdownRemark.edges
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Home"/>
       <div className="container-fluid">
         <div className="row">
           <div className="banner-img">
-            <img src={FlockTeam} alt="het enthousiaste Flock team buiten het kantoor" />
+            <img src={FlockTeam} alt="het enthousiaste Flock team buiten het kantoor"/>
           </div>
         </div>
         <div className="row bg-yellow bg-polygon-reverse">
@@ -61,15 +61,17 @@ const IndexPage = ({ data }) => {
 
         <div className="container">
           <div className="row hero-full-page">
-            <HeroLanding />
+            <HeroLanding/>
           </div>
         </div>
-        <a name="community"></a>
-        <div className="row">
-          <div className="bg-yellow bg-polygon">
-            <HeroFlockCommunity />
+        <section>
+          <a id="community" className="anchor"/>
+          <div className="row">
+            <div className="bg-yellow bg-polygon">
+              <HeroFlockCommunity/>
+            </div>
           </div>
-        </div>
+        </section>
         <section>
           <div className="container">
             <div className="row mb-5">
@@ -82,7 +84,7 @@ const IndexPage = ({ data }) => {
             <BoxItem
               title={contentFlockCommunity.rows[0].title}
               imgComp={
-                <img src={CalendarFlockDayIcon} alt={contentFlockCommunity.rows[0].img.alt} />
+                <img src={CalendarFlockDayIcon} alt={contentFlockCommunity.rows[0].img.alt}/>
               }
               paragraph={contentFlockCommunity.rows[0].paragraph}
             />
@@ -91,31 +93,28 @@ const IndexPage = ({ data }) => {
             <BoxItem
               boxReverse
               title={contentFlockCommunity.rows[1].title}
-              imgComp={<img src={SocialEventsIcon} alt={contentFlockCommunity.rows[1].img.alt} />}
+              imgComp={<img src={SocialEventsIcon} alt={contentFlockCommunity.rows[1].img.alt}/>}
               paragraph={contentFlockCommunity.rows[1].paragraph}
             />
           </div>
           <div className="row box-height bg-blue-light py-5">
             <BoxItem
               title={contentFlockCommunity.rows[2].title}
-              imgComp={<img src={PresentationIcon} alt={contentFlockCommunity.rows[2].img.alt} />}
+              imgComp={<img src={PresentationIcon} alt={contentFlockCommunity.rows[2].img.alt}/>}
               paragraph={contentFlockCommunity.rows[2].paragraph}
             />
           </div>
         </section>
         <section className="container">
+          <a id="blogs" className="anchor"/>
           <div className="row">
-            <header className="col-12">
-              <a href="#showcases" name="showcases">
-                <h2>Onze Showcases</h2>
-              </a>
-            </header>
+            <h2>Blogs</h2>
           </div>
           <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3">
-            {showcases.map(({ node }) => {
-              const { fields, frontmatter } = node
-              const { title, author, coverImage, coverCaption, external } = frontmatter
-              const { firstname, lastname, image } = peoples.filter(p => p.firstname === author)[0]
+            {showcases.map(({node}) => {
+              const {fields, frontmatter} = node
+              const {title, author, coverImage, coverCaption, external} = frontmatter
+              const {firstname, lastname, image} = peoples.filter(p => p.firstname === author)[0]
 
               return (
                 <div className="col mb-4">

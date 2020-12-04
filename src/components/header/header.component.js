@@ -29,12 +29,12 @@ export function Header() {
             </a>
           </li>
           <li>
-            <a className="navbar-link" data-scroll="" href="/#showcases" onClick={_handleClick}>
-              Showcases
+            <a className="navbar-link" data-scroll="" href="/#blogs" onClick={_handleClick}>
+              Blogs
             </a>
           </li>
           <li>
-            <a className="navbar-link" data-scroll="" href="#contact" onClick={_handleClick}>
+            <a className="navbar-link" data-scroll="" href="/#contact" onClick={_handleClick}>
               Contact
             </a>
           </li>

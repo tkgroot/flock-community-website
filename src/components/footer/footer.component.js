@@ -12,13 +12,13 @@ export function NavGroup() {
       <h5>About</h5>
       <ul>
         <li>
-          <a className="footer-link" href="#">
+          <a className="footer-link" href="#community">
             Over ons
           </a>
         </li>
         <li>
-          <a className="footer-link" href="#">
-            Showcases
+          <a className="footer-link" href="#blogs">
+            Blogs
           </a>
         </li>
       </ul>
@@ -30,7 +30,7 @@ export function Footer(props) {
   const {children} = props
 
   return (
-    <div className="mt-auto">
+    <footer id="contact" className="mt-auto">
       <div className="page-footer">
         <img src={FlockLogoOnly} alt="Flock logo, a black bird on yellow background" />
         <div className="nav-group">
@@ -66,7 +66,7 @@ export function Footer(props) {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 

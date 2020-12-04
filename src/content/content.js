@@ -57,7 +57,7 @@ export const contentFooter = {
   nav: [
     {
       title: "About",
-      items: ["Showcases", "Onze Developers"],
+      items: ["Blogs", "Onze Developers"],
     },
     {
       title: "Contact",
